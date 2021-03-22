@@ -11,7 +11,9 @@ import 'bootstrap/dist/css/bootstrap.css'
 
 // Apps
 import BaseLayout from 'components/BaseLayout'
-import Home from 'components/Home'
+import Home from 'components/Home-Page'
+import DataList from 'components/DataList-Page'
+import Summary from 'components/Summary-Page'
 
 ReactDOM.render(
   <Router>
@@ -19,6 +21,8 @@ ReactDOM.render(
       <BaseLayout>
         <DataProvider>
           <Route exact path="/" component={Home} />
+          <Route path="/datalist" component={DataList} />
+          <Route path="/summary" component={Summary} />
         </DataProvider>
       </BaseLayout>
     </Switch>

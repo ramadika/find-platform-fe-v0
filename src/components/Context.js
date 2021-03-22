@@ -4,9 +4,14 @@ export const Provider = DataContext.Provider;
 
 export class DataProvider extends Component {
     render() {
+        const contextValue = {
+
+        }
         return (
             <div>
-                
+                <DataContext.Provider value={contextValue}>
+                    {this.props.children}
+                </DataContext.Provider>
             </div>
         )
     }

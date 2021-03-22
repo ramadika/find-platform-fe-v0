@@ -16,7 +16,7 @@ export default function index() {
                     </Nav>
                     <NavLink className="navbar-brand" to="/">Cipta<span>Things</span>.</NavLink>
                     <Nav>
-                        <NavLink to="/dataList">List of Data</NavLink>
+                        <NavLink to="/datalist">List of Data</NavLink>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

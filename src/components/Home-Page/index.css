@@ -1,0 +1,9 @@
+.home {
+  font-family: "Poppins", sans-serif;
+  margin-top: 50px;
+}
+
+.home h1 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
