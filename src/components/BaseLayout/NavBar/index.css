@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,700;0,900;1,100;1,400;1,900&display=swap");
+
+.navbar-nav a {
+  color: rgb(100, 100, 100);
+  margin-right: 50px;
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+}
+
+.navbar-nav a:hover {
+  color: rgb(36, 35, 35);
+  text-decoration: none;
+}
+
+.navbar-light .navbar-brand {
+  color: #00834e;
+  margin-right: 50px;
+  font-family: "Raleway", sans-serif;
+  font-style: italic;
+  font-weight: 900;
+}
+
+.navbar-light .navbar-brand span {
+  color: #abe4cd;
+  font-weight: 400;
+}
+
+.navbar-light .navbar-brand:hover {
+  transition: 0.3s;
+  text-decoration: none;
+  color: #00472b;
+}
+
+.navbar-light .navbar-brand span:hover {
+  color: #69a38c;
+  transition: 0.3s;
+  text-decoration: none;
+}
