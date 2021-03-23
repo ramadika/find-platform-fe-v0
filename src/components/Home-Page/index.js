@@ -20,12 +20,14 @@ export default class index extends Component {
             response.json().then(function(data) {
                 if(data.success === 1){
                     this.setState({
-                        address: data.address,
+                        address: data.timestamp,
                         rssi: data.rssi,
                     });
+                    // console.log(this.state.address);
+                    // console.log(this.state.rssi);   
                 }
                 else {
-                    alert(data.message);
+                    // console.log(data.message);
                 }
             }.bind(this));
         })
