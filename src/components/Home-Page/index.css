@@ -20,6 +20,17 @@
 
 .home .row input[type="text"] {
   width: 500px;
+  color: #ffffff;
+  background-image: linear-gradient(grey, grey),
+    url(/src/assets/jezael-melgoza-cv3T6MG36DE-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: 220%;
+  background-position: 50% 43%;
+  background-blend-mode: multiply;
+}
+
+::placeholder {
+  color: #ffffff;
 }
 
 .home .row .table {

@@ -49,7 +49,7 @@ export default class index extends Component {
                 <div className="container text-center">
                     <h1>People Location</h1>
                     <h6>{timestamp}</h6>
-                    <div className="row d-flex justify-content-center mt-3">
+                    <div className="row d-flex justify-content-center mt-4">
                         <form onSubmit={this.fetchData}>
                             <div className="form-group row">
                                 <input type="text" ref={(val) => (this.name = val)} className="col form-control text-center" placeholder="Name" />

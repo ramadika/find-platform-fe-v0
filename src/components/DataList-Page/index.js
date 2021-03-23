@@ -45,7 +45,7 @@ export default class index extends Component {
         return (
             <div className="dataList">
                 <div className="container text-center">
-                    <h1>Data List</h1>
+                    <h1>List of Data Location</h1>
                     <h6>{timestamp}</h6>
                     <div className="row mt-3">
                         <table className="table table-borderless">

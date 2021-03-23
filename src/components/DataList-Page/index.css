@@ -27,11 +27,17 @@
   width: 100%;
 }
 
-.dataList .row .table th {
+.dataList .row .table thead th {
   font-size: 11pt;
   text-transform: uppercase;
-  background-color: #00834e;
+  /* background-color: #00834e; */
   color: #ffffff;
+  background-image: linear-gradient(grey, grey),
+    url(/src/assets/jezael-melgoza-layMbSJ3YOE-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: 220%;
+  background-position: 50% 42%;
+  background-blend-mode: multiply;
 }
 
 .dataList .row .table tbody th {

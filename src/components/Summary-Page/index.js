@@ -2,13 +2,63 @@
 import React, { Component } from 'react'
 // Internals
 import 'components/Summary-Page/index.css'
+import { DataContext } from 'components/Context'
 
 export default class index extends Component {
+    static contextType = DataContext;
+    constructor(props){
+        super(props);
+        this.state = {
+            timestamp: "",
+        }
+    }
+
+    fetchData = () => {
+        fetch('http://192.168.5.183/receiveESP/view.php')
+        .then(response => {
+            response.json().then(function(data) {
+                if(data.success === 1){
+                    this.setState({
+                        timestamp: data.timestamp,
+                    })
+                }
+                else {
+                    console.log(data.message);
+                }
+            }.bind(this));
+        })
+        .catch(error => {
+            console.log(error);
+        });
+    }
+
+    componentDidMount() {
+        this.fetchData();
+        setInterval(this.fetchData, 1000);
+    }
+
     render() {
+        const {timestamp} = this.state;
+
         return (
-            <div>
+            <div className="summary">
                 <div className="container text-center">
                     <h1>Summary</h1>
+                    <h6>{timestamp}</h6>
+                    <div className="row mt-3">
+                        <div className="col a-summary">
+                            <h3>Bagian A</h3>
+                            <h5>15</h5>
+                        </div>
+                        <div className="col b-summary">
+                            <h3>Total</h3>
+                            <h5>55</h5>
+                        </div>
+                        <div className="col c-summary">
+                            <h3>Bagian b</h3>
+                            <h5>40</h5>
+                        </div>
+                    </div>
                 </div>
             </div>
         )
