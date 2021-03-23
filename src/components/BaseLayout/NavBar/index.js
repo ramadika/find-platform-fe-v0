@@ -12,9 +12,9 @@ export default function index() {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse className="justify-content-center" id="basic-navbar-nav">
                     <Nav>
-                        <NavLink to="/summary">Summary</NavLink>
+                        <NavLink className="mr-5" to="/summary">Summary</NavLink>
                     </Nav>
-                    <NavLink className="navbar-brand" to="/">Cipta<span>Things</span>.</NavLink>
+                    <NavLink className="navbar-brand mr-5" to="/">Cipta<span>Things</span>.</NavLink>
                     <Nav>
                         <NavLink to="/datalist">List of Data</NavLink>
                     </Nav>

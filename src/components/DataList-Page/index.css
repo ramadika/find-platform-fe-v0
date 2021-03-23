@@ -1,0 +1,52 @@
+.dataList {
+  font-family: "Poppins", sans-serif;
+  margin-top: 50px;
+}
+
+.dataList h1 {
+  font-family: "Ubuntu", sans-serif;
+  text-transform: uppercase;
+  color: #343a40;
+  font-size: 26pt;
+}
+
+.dataList h6 {
+  font-size: 8pt;
+  font-style: italic;
+  color: #dcdde1;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dataList .row .table {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  text-align: center;
+  border: 1px solid #dcdde1;
+  width: 100%;
+}
+
+.dataList .row .table th {
+  font-size: 11pt;
+  text-transform: uppercase;
+  background-color: #00834e;
+  color: #ffffff;
+}
+
+.dataList .row .table tbody th {
+  font-size: 11pt;
+  text-transform: none;
+  background-color: white;
+  color: #343a40;
+}
+
+.dataList .row .table td {
+  font-size: 11pt;
+}
+
+.dataList .row .table tbody th:hover,
+.dataList .row .table tr:hover {
+  background-color: #ddd;
+  transition: 0.3s;
+}

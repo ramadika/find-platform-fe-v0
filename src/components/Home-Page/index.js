@@ -9,25 +9,25 @@ export default class index extends Component {
     constructor(props){
         super(props);
         this.state = {
-            address: "",
-            rssi: 0
+            result: [],
+            timestamp: "",
         }
     }
 
     fetchData = () => { 
-        fetch('http://192.168.5.183/receiveESP/index.php')
+        fetch('http://192.168.5.183/receiveESP/view.php')
         .then(response => {
             response.json().then(function(data) {
                 if(data.success === 1){
                     this.setState({
-                        address: data.timestamp,
-                        rssi: data.rssi,
+                        result: data.result,
+                        timestamp: data.timestamp,
                     });
                     // console.log(this.state.address);
                     // console.log(this.state.rssi);   
                 }
                 else {
-                    // console.log(data.message);
+                    console.log(data.message);
                 }
             }.bind(this));
         })
@@ -38,26 +38,49 @@ export default class index extends Component {
 
     componentDidMount() {
         this.fetchData();
-        setInterval(this.fetchData, 5000);
+        setInterval(this.fetchData, 1000);
     }
 
     render() {
-        const {address, rssi} = this.state;
+        const {result, timestamp} = this.state;
         
         return (
             <div className="home">
                 <div className="container text-center">
-                    <h1>Track User</h1>
-                    <div className="row">
-                        <div className="col">
-                            <h2>Mac-Address</h2>
-                            <h5>{address}</h5>
-                        </div>
-                        <div className="col">
-                            <h2>RSSI</h2>
-                            <h5>{rssi}</h5>
-                        </div>
+                    <h1>People Location</h1>
+                    <h6>{timestamp}</h6>
+                    <div className="row d-flex justify-content-center mt-3">
+                        <form onSubmit={this.fetchData}>
+                            <div className="form-group row">
+                                <input type="text" ref={(val) => (this.name = val)} className="col form-control text-center" placeholder="Name" />
+                            </div>
+                        </form>
                     </div>
+                    {/* <div className="row mt-3">
+                        <div className="table-responsive">
+                            <table className="table table-borderless">
+                                <thead>
+                                    <tr>
+                                        <th>Mac-Address</th>
+                                        <th>RSSI</th>
+                                        <th>Time</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {
+                                        result.map(results => (
+                                            <tr key={results.id}>
+                                                <th scope="row">{results.Address}</th>
+                                                <td>{results.RSSI}</td>
+                                                <td>{results.Time}</td>
+                                            </tr>
+                                        ))
+                                    }
+                                </tbody>
+
+                            </table>
+                        </div>
+                    </div> */}
                 </div>
             </div>
         )
