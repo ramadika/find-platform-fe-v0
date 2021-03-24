@@ -9,16 +9,22 @@ export default class index extends Component {
     constructor(props){
         super(props);
         this.state = {
+            result: "",
+            result_area1: "",
+            result_area2: "",
             timestamp: "",
         }
     }
 
     fetchData = () => {
-        fetch('http://192.168.5.183/receiveESP/view.php')
+        fetch('http://192.168.5.183/receiveESP/count.php')
         .then(response => {
             response.json().then(function(data) {
                 if(data.success === 1){
                     this.setState({
+                        result: data.result,
+                        result_area1: data.result_area1,
+                        result_area2: data.result_area2,
                         timestamp: data.timestamp,
                     })
                 }
@@ -38,7 +44,7 @@ export default class index extends Component {
     }
 
     render() {
-        const {timestamp} = this.state;
+        const {timestamp, result, result_area1, result_area2} = this.state;
 
         return (
             <div className="summary">
@@ -48,15 +54,15 @@ export default class index extends Component {
                     <div className="row mt-3">
                         <div className="col a-summary">
                             <h3>Bagian A</h3>
-                            <h5>15</h5>
+                            <h5>{result_area1}</h5>
                         </div>
                         <div className="col b-summary">
                             <h3>Total</h3>
-                            <h5>55</h5>
+                            <h5>{result}</h5>
                         </div>
                         <div className="col c-summary">
                             <h3>Bagian b</h3>
-                            <h5>40</h5>
+                            <h5>{result_area2}</h5>
                         </div>
                     </div>
                 </div>
