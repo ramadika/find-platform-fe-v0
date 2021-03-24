@@ -46,26 +46,28 @@ export default class index extends Component {
                     <h1>List of Data Location</h1>
                     <h6>{this.context.timestamp}</h6>
                     <div className="row mt-3">
-                        <table className="table table-borderless">
-                            <thead>
-                                <tr>
-                                    <th>Mac Address</th>
-                                    <th>RSSI</th>
-                                    <th>Time</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {
-                                    result.map(results => (
-                                        <tr key={results.id}>
-                                            <th scope="row">{results.Address}</th>
-                                            <td>{results.RSSI}</td>
-                                            <td>{results.Time}</td>
-                                        </tr>
-                                    ))
-                                }
-                            </tbody>
-                        </table>
+                        <div className="table-responsive">
+                            <table className="table table-borderless">
+                                <thead>
+                                    <tr>
+                                        <th>Mac Address</th>
+                                        <th>RSSI</th>
+                                        <th>Time</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {
+                                        result.map(results => (
+                                            <tr key={results.id}>
+                                                <th scope="row">{results.Address}</th>
+                                                <td>{results.RSSI}</td>
+                                                <td>{results.Time}</td>
+                                            </tr>
+                                        ))
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
