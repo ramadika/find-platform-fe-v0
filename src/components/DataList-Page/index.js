@@ -1,5 +1,9 @@
 // Dependencies
 import React, { Component } from 'react'
+import 'jquery/dist/jquery.min.js';
+import "datatables.net-dt/js/dataTables.dataTables"
+import "datatables.net-dt/css/jquery.dataTables.min.css"
+import $ from 'jquery'; 
 // Internals
 import 'components/DataList-Page/index.css'
 import { DataContext } from 'components/Context'
@@ -34,7 +38,13 @@ export default class index extends Component {
 
     componentDidMount() {
         this.fetchData();
-        setInterval(this.fetchData, 1000)
+        setInterval(this.fetchData, 1000);
+    }
+
+    componentDidUpdate() {
+        $(document).ready(function () {
+            $('#example').DataTable();
+        });
     }
 
     render() {
@@ -45,9 +55,9 @@ export default class index extends Component {
                 <div className="container text-center">
                     <h1>List of Data Location</h1>
                     <h6>{this.context.timestamp}</h6>
-                    <div className="row mt-3">
+                    <div className="row mt-3 mb-5">
                         <div className="table-responsive">
-                            <table className="table table-borderless">
+                            <table  id="example" className="table table-borderless">
                                 <thead>
                                     <tr>
                                         <th>Mac Address</th>
