@@ -10,7 +10,6 @@ export default class index extends Component {
         super(props);
         this.state = {
             result: [],
-            timestamp: "",
         }
     }
 
@@ -21,7 +20,6 @@ export default class index extends Component {
                 if(data.success === 1){
                     this.setState({
                         result: data.result,
-                        timestamp: data.timestamp,
                     })
                 }
                 else {
@@ -40,13 +38,13 @@ export default class index extends Component {
     }
 
     render() {
-        const {result, timestamp} = this.state;
+        const {result} = this.state;
 
         return (
             <div className="dataList">
                 <div className="container text-center">
                     <h1>List of Data Location</h1>
-                    <h6>{timestamp}</h6>
+                    <h6>{this.context.timestamp}</h6>
                     <div className="row mt-3">
                         <table className="table table-borderless">
                             <thead>

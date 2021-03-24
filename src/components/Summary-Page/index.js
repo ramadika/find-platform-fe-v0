@@ -12,7 +12,6 @@ export default class index extends Component {
             result: "",
             result_area1: "",
             result_area2: "",
-            timestamp: "",
         }
     }
 
@@ -25,7 +24,6 @@ export default class index extends Component {
                         result: data.result,
                         result_area1: data.result_area1,
                         result_area2: data.result_area2,
-                        timestamp: data.timestamp,
                     })
                 }
                 else {
@@ -44,13 +42,13 @@ export default class index extends Component {
     }
 
     render() {
-        const {timestamp, result, result_area1, result_area2} = this.state;
+        const {result, result_area1, result_area2} = this.state;
 
         return (
             <div className="summary">
                 <div className="container text-center">
                     <h1>Summary</h1>
-                    <h6>{timestamp}</h6>
+                    <h6>{this.context.timestamp}</h6>
                     <div className="row mt-3">
                         <div className="col a-summary">
                             <h3>Bagian A</h3>

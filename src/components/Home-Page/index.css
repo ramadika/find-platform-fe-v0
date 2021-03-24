@@ -4,10 +4,15 @@
 }
 
 .home h1 {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
   text-transform: uppercase;
   color: #343a40;
   font-size: 26pt;
+  /* background: url(/src/assets/jezael-melgoza-cv3T6MG36DE-unsplash.jpg) no-repeat;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-position: 30% 30%; */
 }
 
 .home h6 {
@@ -33,6 +38,13 @@
   color: #ffffff;
 }
 
+.home h3 {
+  font-size: 12pt;
+  color: #dcdde1;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .home .row .table {
   margin-left: auto;
   margin-right: auto;
@@ -42,10 +54,18 @@
   width: 100%;
 }
 
+.home .row .table thead {
+  background-image: linear-gradient(grey, grey),
+    url(/src/assets/jezael-melgoza-xFoij1E4zic-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: 220%;
+  background-position: 70% 57%;
+  background-blend-mode: multiply;
+}
+
 .home .row .table th {
   font-size: 11pt;
   text-transform: uppercase;
-  background-color: #00834e;
   color: #ffffff;
 }
 
