@@ -1,40 +1,50 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,700;0,900;1,100;1,400;1,900&display=swap");
 
-.navbar-brand {
-  margin-right: -5%;
+.navbar-dark {
+  background-image: linear-gradient(grey, grey),
+    url(/src/assets/jezael-melgoza-cv3T6MG36DE-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: 220%;
+  background-position: 50% 50%;
+  background-blend-mode: multiply;
 }
 
-.navbar-light .navbar-brand {
+.bg-dark {
+  background-color: #b0b2b8 !important;
+}
+
+.navbar-dark .navbar-brand {
   /* color: #00834e; */
-  background: url(/src/assets/jezael-melgoza-cv3T6MG36DE-unsplash.jpg) no-repeat;
+  /* background: url(/src/assets/jezael-melgoza-cv3T6MG36DE-unsplash.jpg) no-repeat;
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
-   background-position: 50% 30%;
+   background-position: 50% 50%; */
   /* margin-right: 50px; */
   font-family: "Raleway", sans-serif;
   font-style: italic;
   font-weight: 900;
+  margin-right: -5%;
 }
 
-/* .navbar-light .navbar-brand span {
+.navbar-dark .navbar-brand span {
   color: #abe4cd;
   font-weight: 400;
 }
 
-.navbar-light .navbar-brand:hover {
+.navbar-dark .navbar-brand:hover {
   transition: 0.3s;
   text-decoration: none;
   color: #00472b;
 }
 
-.navbar-light .navbar-brand span:hover {
+.navbar-dark .navbar-brand span:hover {
   color: #69a38c;
   transition: 0.3s;
   text-decoration: none;
-} */
+}
 
 .navbar-nav a {
-  color: #b0b2b8;
+  color: #ffffff;
   margin-right: 50px;
   font-family: "Raleway", sans-serif;
   font-size: 12px;
