@@ -64,30 +64,6 @@
 .summary .row .col h5 {
   font-family: "Ubuntu", sans-serif;
   font-weight: 800;
-  font-size: 32pt;
-  color: #00834e;
-}
-
-.summary .row .table th {
-  font-size: 11pt;
-  text-transform: uppercase;
-  background-color: #00834e;
-  color: #ffffff;
-}
-
-.summary .row .table tbody th {
-  font-size: 11pt;
-  text-transform: none;
-  background-color: white;
-  color: #343a40;
-}
-
-.summary .row .table td {
-  font-size: 11pt;
-}
-
-.summary .row .table tbody th:hover,
-.summary .row .table tr:hover {
-  background-color: #ddd;
-  transition: 0.3s;
+  font-size: 34pt;
+  color: #abe4cd;
 }
