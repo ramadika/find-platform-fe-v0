@@ -5,7 +5,7 @@ import "datatables.net-dt/js/dataTables.dataTables"
 import "datatables.net-dt/css/jquery.dataTables.min.css"
 import $ from 'jquery'; 
 // Internals
-import 'components/DataList-Page/index.css'
+import 'components/Reports-Page/index.css'
 import { DataContext } from 'components/Context'
 
 export default class index extends Component {

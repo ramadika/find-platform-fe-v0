@@ -1,7 +1,7 @@
 // Dependencies
 import React, { Component } from 'react'
 // Internals
-import 'components/Summary-Page/index.css'
+import 'components/Dashboard-Page/index.css'
 import { DataContext } from 'components/Context'
 
 export default class index extends Component {

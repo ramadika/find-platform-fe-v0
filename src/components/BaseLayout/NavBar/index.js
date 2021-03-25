@@ -13,8 +13,8 @@ export default function index() {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse className="justify-content-center" id="basic-navbar-nav">
                     <Nav>
-                        <NavLink to="/summary">Dashboard</NavLink>
-                        <NavLink to="/datalist">Reports</NavLink>
+                        <NavLink to="/dashboard">Dashboard</NavLink>
+                        <NavLink to="/reports">Reports</NavLink>
                         <NavLink to="/help">Help</NavLink>
                     </Nav>
                 </Navbar.Collapse>
