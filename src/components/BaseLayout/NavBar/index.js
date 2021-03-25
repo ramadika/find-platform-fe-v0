@@ -9,14 +9,13 @@ export default function index() {
     return (
         <div>
             <Navbar bg="light" variant="light" expand="lg">
+                <NavLink className="navbar-brand" to="/">Cipta<span>Things</span>.</NavLink>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse className="justify-content-center" id="basic-navbar-nav">
                     <Nav>
-                        <NavLink className="mr-5" to="/summary">Summary</NavLink>
-                    </Nav>
-                    <NavLink className="navbar-brand mr-5" to="/">Cipta<span>Things</span>.</NavLink>
-                    <Nav>
-                        <NavLink to="/datalist">List of Data</NavLink>
+                        <NavLink to="/summary">Dashboard</NavLink>
+                        <NavLink to="/datalist">Reports</NavLink>
+                        <NavLink to="/help">Help</NavLink>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
