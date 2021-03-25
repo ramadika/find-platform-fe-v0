@@ -5,14 +5,18 @@
 }
 
 .navbar-light .navbar-brand {
-  color: #00834e;
+  /* color: #00834e; */
+  background: url(/src/assets/jezael-melgoza-cv3T6MG36DE-unsplash.jpg) no-repeat;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-position: 50% 30%;
   /* margin-right: 50px; */
   font-family: "Raleway", sans-serif;
   font-style: italic;
   font-weight: 900;
 }
 
-.navbar-light .navbar-brand span {
+/* .navbar-light .navbar-brand span {
   color: #abe4cd;
   font-weight: 400;
 }
@@ -27,7 +31,7 @@
   color: #69a38c;
   transition: 0.3s;
   text-decoration: none;
-}
+} */
 
 .navbar-nav a {
   color: #b0b2b8;
