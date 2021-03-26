@@ -33,14 +33,14 @@ export default class index extends Component {
                         <div class="p-2 w-100 bd-highlight">How can i setup my user profile ?</div>
                         <div class="p-2 flex-shrink-1 bd-highlight"><BsPlusCircleFill /></div>
                     </NavLink>
-                    <div className="d-flex bd-highlight box-help">
+                    <NavLink className="d-flex bd-highlight box-help" to="/">
                         <div class="p-2 w-100 bd-highlight">Can i have more than one subcription at a time ?</div>
                         <div class="p-2 flex-shrink-1 bd-highlight"><BsPlusCircleFill /></div>
-                    </div>
-                    <div className="d-flex bd-highlight box-help">
+                    </NavLink>
+                    <NavLink className="d-flex bd-highlight box-help" to="/">
                         <div class="p-2 w-100 bd-highlight">Can i cancel my subscription wherever i want ?</div>
                         <div class="p-2 flex-shrink-1 bd-highlight"><BsPlusCircleFill /></div>
-                    </div>
+                    </NavLink>
                 </div>
             </div>
         )

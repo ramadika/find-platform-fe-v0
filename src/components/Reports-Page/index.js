@@ -60,6 +60,7 @@ export default class index extends Component {
                             <table  id="example" className="table table-borderless">
                                 <thead>
                                     <tr>
+                                        <th>Name</th>
                                         <th>Mac Address</th>
                                         <th>RSSI</th>
                                         <th>Time</th>
@@ -69,7 +70,8 @@ export default class index extends Component {
                                     {
                                         result.map(results => (
                                             <tr key={results.id}>
-                                                <th scope="row">{results.Address}</th>
+                                                <th scope="row">{results.User}</th>
+                                                <td>{results.Address}</td>
                                                 <td>{results.RSSI}</td>
                                                 <td>{results.Time}</td>
                                             </tr>

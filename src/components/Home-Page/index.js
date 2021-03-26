@@ -19,7 +19,7 @@ export default class index extends Component {
         event.preventDefault();
         event.persist();
         Axios.post('http://192.168.5.183/receiveESP/search.php', {
-            Address: this.Address.value
+            User: this.User.value
         })
         .then(function({data}) {
             if(data.success === 1){
@@ -48,7 +48,7 @@ export default class index extends Component {
                     <table className="table table-borderless">
                         <thead>
                             <tr>
-                                <th>Mac-Address</th>
+                                <th>Name</th>
                                 <th>RSSI</th>
                                 <th>Time</th>
                             </tr>
@@ -57,7 +57,7 @@ export default class index extends Component {
                             {
                                 result.map(results => (
                                     <tr key={results.id}>
-                                        <th scope="row">{results.Address}</th>
+                                        <th scope="row">{results.User}</th>
                                         <td>{results.RSSI}</td>
                                         <td>{results.Time}</td>
                                     </tr>
@@ -82,7 +82,7 @@ export default class index extends Component {
                     <div className="row d-flex justify-content-center mt-4">
                         <form onSubmit={this.postData}>
                             <div className="form-group row">
-                                <input type="text" ref={(val) => (this.Address = val)} className="col form-control text-center" placeholder="Name" />
+                                <input type="text" ref={(val) => (this.User = val)} className="col form-control text-center" placeholder="Name" />
                             </div>
                         </form>
                     </div>
