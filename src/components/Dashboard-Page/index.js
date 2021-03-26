@@ -51,7 +51,7 @@ export default class index extends Component {
                     <h6>{this.context.timestamp}</h6>
                     <div className="row mt-3">
                         <div className="col a-summary">
-                            <h3>Bagian A</h3>
+                            <h3>Section A</h3>
                             <h5>{result_area1}</h5>
                         </div>
                         <div className="col b-summary">
@@ -59,7 +59,7 @@ export default class index extends Component {
                             <h5>{result}</h5>
                         </div>
                         <div className="col c-summary">
-                            <h3>Bagian b</h3>
+                            <h3>Section b</h3>
                             <h5>{result_area2}</h5>
                         </div>
                     </div>
