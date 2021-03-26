@@ -38,6 +38,7 @@
   font-size: 13pt;
   background: url(/src/assets/jezael-melgoza-cv3T6MG36DE-unsplash.jpg) no-repeat;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   background-position: 50% 50%;
 }
