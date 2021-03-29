@@ -63,6 +63,7 @@ export default class index extends Component {
                                         <th>Name</th>
                                         <th>Mac Address</th>
                                         <th>RSSI</th>
+                                        <th>Area</th>
                                         <th>Time</th>
                                     </tr>
                                 </thead>
@@ -73,6 +74,7 @@ export default class index extends Component {
                                                 <th scope="row">{results.User}</th>
                                                 <td>{results.Address}</td>
                                                 <td>{results.RSSI}</td>
+                                                <td>{results.Area}</td>
                                                 <td>{results.Time}</td>
                                             </tr>
                                         ))
