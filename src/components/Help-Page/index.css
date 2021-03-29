@@ -107,16 +107,13 @@
 }
 
 .help .box-help svg {
-  fill: #abe4cd;
+  color: #abe4cd;
 }
 
-.help .box-help:hover {
+.help .box-help:hover,
+.help .box-help:hover svg {
   text-decoration: none;
   transition: 0.3s;
   background-color: #abe4cd;
   color: #ffffff;
-}
-
-.help .box-help svg:hover {
-  fill: #ffffff;
 }

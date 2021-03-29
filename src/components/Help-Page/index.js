@@ -30,16 +30,16 @@ export default class index extends Component {
                     <h2><span><b>Quick</b></span> Answers</h2>
                     <hr />
                     <NavLink className="d-flex bd-highlight box-help" to="/">
-                        <div class="p-2 w-100 bd-highlight">How can i setup my user profile ?</div>
-                        <div class="p-2 flex-shrink-1 bd-highlight"><BsPlusCircleFill /></div>
+                        <div className="p-2 w-100 bd-highlight">How can i setup my user profile ?</div>
+                        <div className="p-2 flex-shrink-1 bd-highlight icon"><BsPlusCircleFill /></div>
                     </NavLink>
                     <NavLink className="d-flex bd-highlight box-help" to="/">
-                        <div class="p-2 w-100 bd-highlight">Can i have more than one subcription at a time ?</div>
-                        <div class="p-2 flex-shrink-1 bd-highlight"><BsPlusCircleFill /></div>
+                        <div className="p-2 w-100 bd-highlight">Can i have more than one subcription at a time ?</div>
+                        <div className="p-2 flex-shrink-1 bd-highlight"><BsPlusCircleFill /></div>
                     </NavLink>
                     <NavLink className="d-flex bd-highlight box-help" to="/">
-                        <div class="p-2 w-100 bd-highlight">Can i cancel my subscription wherever i want ?</div>
-                        <div class="p-2 flex-shrink-1 bd-highlight"><BsPlusCircleFill /></div>
+                        <div className="p-2 w-100 bd-highlight">Can i cancel my subscription wherever i want ?</div>
+                        <div className="p-2 flex-shrink-1 bd-highlight"><BsPlusCircleFill /></div>
                     </NavLink>
                 </div>
             </div>

@@ -57,8 +57,8 @@ export default class index extends Component {
                             {
                                 result.map(results => (
                                     <tr key={results.id}>
-                                        <th scope="row">Area - {results.Area}</th>
-                                        <td>{results.RSSI}</td>
+                                        <th scope="row">{results.User}</th>
+                                        <td>Area - {results.Area}</td>
                                         <td>{results.Time}</td>
                                     </tr>
                                 ))
