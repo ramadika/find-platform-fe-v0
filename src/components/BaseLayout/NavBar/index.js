@@ -16,6 +16,7 @@ export default function index() {
                         <NavLink to="/dashboard">Dashboard</NavLink>
                         <NavLink to="/reports">Reports</NavLink>
                         <NavLink to="/help">Help</NavLink>
+                        <NavLink to="/account">Account</NavLink>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

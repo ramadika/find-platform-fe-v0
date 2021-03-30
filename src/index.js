@@ -15,6 +15,7 @@ import Home from 'components/Home-Page'
 import Reports from 'components/Reports-Page'
 import Dashboard from 'components/Dashboard-Page'
 import Help from 'components/Help-Page'
+import Account from 'components/Account-Page'
 
 ReactDOM.render(
   <Router>
@@ -25,6 +26,7 @@ ReactDOM.render(
           <Route path="/reports" component={Reports} />
           <Route path="/dashboard" component={Dashboard} />
           <Route path="/help" component={Help} />
+          <Route path="/account" component={Account} />
         </DataProvider>
       </BaseLayout>
     </Switch>
