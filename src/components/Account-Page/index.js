@@ -16,7 +16,7 @@ export default class index extends Component {
                     <h1>Account</h1>
                     <h6>{this.context.timestamp}</h6>
                     <div className="row mt-5">
-                        <NavLink className="col a-account" to="/">
+                        <NavLink className="col a-account" to="/addAccount">
                             <IoIosAddCircle size={30} className="mb-2"/> 
                             <h5>Add Someone</h5>
                         </NavLink>       

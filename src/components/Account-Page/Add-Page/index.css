@@ -1,0 +1,28 @@
+.add {
+  font-family: "Poppins", sans-serif;
+  margin-top: 80px;
+}
+
+.add h1 {
+  font-family: "Ubuntu", sans-serif;
+  text-transform: uppercase;
+  color: #343a40;
+  font-size: 26pt;
+}
+
+.add h6 {
+  font-size: 8pt;
+  font-style: italic;
+  color: #dcdde1;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.add .row h3 {
+  font-size: 10pt;
+  margin-top: 15px;
+}
+
+.add .row h4 {
+  font-size: 6pt;
+}
