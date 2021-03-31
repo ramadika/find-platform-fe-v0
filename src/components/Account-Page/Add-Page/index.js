@@ -71,10 +71,10 @@ export default class index extends Component {
                     address: data.address,
                     referrer: 1
                 });
-                alert(data.address);
+                alert(data.message);
             }
             else {
-                alert(data.address);
+                alert(data.message);
             }
         }.bind(this)) 
         .catch(function (error) {
