@@ -57,3 +57,7 @@
   text-decoration: none;
   transition: 0.3s;
 }
+
+.update .row .delete-update {
+  border: 1px solid #343a40;
+}
