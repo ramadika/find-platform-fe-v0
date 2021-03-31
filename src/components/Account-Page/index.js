@@ -20,7 +20,7 @@ export default class index extends Component {
                             <IoIosAddCircle size={30} className="mb-2"/> 
                             <h5>Add Someone</h5>
                         </NavLink>       
-                        <NavLink className="col b-account" to="/">
+                        <NavLink className="col b-account" to="/updateAccount">
                             <HiPencilAlt size={30} className="mb-2"/>
                             <h5>Update Profile</h5>
                         </NavLink>

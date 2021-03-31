@@ -17,6 +17,7 @@ import Dashboard from 'components/Dashboard-Page'
 import Help from 'components/Help-Page'
 import Account from 'components/Account-Page'
 import Add from 'components/Account-Page/Add-Page'
+import Update from 'components/Account-Page/Update-Page'
 
 ReactDOM.render(
   <Router>
@@ -29,6 +30,7 @@ ReactDOM.render(
           <Route path="/help" component={Help} />
           <Route path="/account" component={Account} />
           <Route path="/addAccount" component={Add} />
+          <Route path="/updateAccount" component={Update} />
         </DataProvider>
       </BaseLayout>
     </Switch>
