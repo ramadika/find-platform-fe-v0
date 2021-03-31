@@ -18,6 +18,37 @@
   margin-right: auto;
 }
 
+.add .row button {
+  width: fit-content;
+  height: fit-content;
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 12pt;
+  border: 0px solid #dcdde1;
+  background: linear-gradient(#343a40,#1a1f27);
+  color: #dcdde1;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px grey;
+}
+
+.add .row button:hover {
+  background-image: linear-gradient(grey, grey),
+    url(/src/assets/jezael-melgoza-cv3T6MG36DE-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: 220%;
+  background-position: 10% 50%;
+  background-blend-mode: multiply;
+  color: #dcdde1;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
 .add .row h3 {
   font-size: 10pt;
   margin-top: 15px;
@@ -38,7 +69,6 @@
   margin-left: auto;
   font-weight: bold;
   font-size: 10pt;
-  color: #343a40;
   border: 0px solid #dcdde1;
   background: linear-gradient(#343a40,#1a1f27);
   color: #dcdde1;

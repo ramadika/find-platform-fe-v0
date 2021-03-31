@@ -9,7 +9,9 @@ export default class index extends Component {
     constructor(){
         super();
         this.state = {
-            count: 0
+            message: '',
+            address: '',
+            referrer: 0,
         };
     }
 
@@ -27,22 +29,23 @@ export default class index extends Component {
                 Axios.post("http://localhost/receiveESP/create.php", {
                     nickName: this.nickName.value,
                     fullName: this.fullName.value,
-                    address: this.address.value,
+                    address: this.state.address,
                 })
                 .then(function({data}) {
                     if(data.success === 1){
                         this.setState({
-                            count: 1
+                            message: data.message,
+                            referrer: 0,
                         });
                         event.target.reset();
                         // alert(data.message);
-                        swal(data.message, {
+                        swal(this.state.message, {
                             icon: "success",
                         });
                     }
                     else {
                         // alert(data.message);
-                        swal(data.message, {
+                        swal(this.state.message, {
                           icon: "error",
                         });
                     }
@@ -56,16 +59,39 @@ export default class index extends Component {
         });
     }
 
+    getData = (event) => {
+        event.preventDefault();
+        event.persist();
+        Axios.post("http://localhost/receiveESP/get.php", {
+            counter: 1,
+        })
+        .then(function({data}) {
+            if(data.success === 1){
+                this.setState({
+                    address: data.address,
+                    referrer: 1
+                });
+                alert(data.address);
+            }
+            else {
+                alert(data.address);
+            }
+        }.bind(this)) 
+        .catch(function (error) {
+            console.log(error);
+        });
+    }
+
     render() {
-        const { count } = this.state;
+        const { referrer, address } = this.state;
 
         let addUser;
-        if(count === 1) {
+        if(referrer === 1) {
             addUser = (
                 <form onSubmit={this.postData}>
                     <h3 className="text-center"><b>Device ID <span style={{color:'red'}}>*</span></b></h3>
                     <h4 className="text-center">Scan Device to get the ID</h4>
-                    <input type="text" name="address" ref={(val) => this.address = val} className="text-center form-control" style={{width:'220px',marginLeft:'auto',marginRight:'auto'}}></input>
+                    <input type="text" name="address" value={address} className="text-center form-control" style={{width:'220px',marginLeft:'auto',marginRight:'auto'}} disabled></input>
                     <div className="row justify-content-center mt-3">
                         <div className="col">
                             <h3><b>Display Name <span style={{color:'red'}}>*</span></b></h3>
@@ -82,9 +108,12 @@ export default class index extends Component {
                 </form>
             )
         }
-        else if (count === 0) {
+        else if (referrer === 0) {
             addUser = (
-                <button className="form-control">Get the ID</button>
+                <div>
+                    <button className="form-control" onClick={this.getData}>Get the ID</button>
+                    <h4>Click the button to get the ID of your device</h4>
+                </div>
             )
         }
         return (
@@ -94,24 +123,7 @@ export default class index extends Component {
                     <h6>Add someone new to looking his/her location</h6>
                     <hr />
                     <div className="row justify-content-center">
-                        <form onSubmit={this.postData}>
-                            <h3 className="text-center"><b>Device ID <span style={{color:'red'}}>*</span></b></h3>
-                            <h4 className="text-center">Scan Device to get the ID</h4>
-                            <input type="text" name="address" ref={(val) => this.address = val} className="text-center form-control" style={{width:'220px',marginLeft:'auto',marginRight:'auto'}}></input>
-                            <div className="row justify-content-center mt-3">
-                                <div className="col">
-                                    <h3><b>Display Name <span style={{color:'red'}}>*</span></b></h3>
-                                    <h4>How do you want to be called?</h4>
-                                    <input type="text" name="nickName" ref={(val) => this.nickName = val} className="form-control" required></input>
-                                </div>
-                                <div className="col">
-                                    <h3><b>Full Name <span style={{color:'red'}}>*</span></b></h3>
-                                    <h4>Visible to other members</h4>
-                                    <input type="text" name="fullName" ref={(val) => this.fullName = val} className="form-control" required></input>
-                                </div>
-                            </div>
-                            <input type="submit" value="Submit"  className="form-control mt-5"></input>
-                        </form>
+                        {addUser}
                     </div>
                 </div>
             </div>
