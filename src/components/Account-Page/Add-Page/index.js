@@ -104,6 +104,18 @@ export default class index extends Component {
                             <input type="text" name="fullName" ref={(val) => this.fullName = val} className="form-control" required></input>
                         </div>
                     </div>
+                    <div className="row justify-content-center mt-3">
+                        <div className="col">
+                            <h3><b>Email</b></h3>
+                            <h4>Receive logging in info</h4>
+                            <input type="text" name="nickName" ref={(val) => this.nickName = val} className="form-control" required></input>
+                        </div>
+                        <div className="col">
+                            <h3><b>Phone Number <span style={{color:'red'}}>*</span></b></h3>
+                            <h4>For receiving notifications</h4>
+                            <input type="text" name="fullName" ref={(val) => this.fullName = val} className="form-control" required></input>
+                        </div>
+                    </div>
                     <input type="submit" value="Submit"  className="form-control mt-5"></input>
                 </form>
             )
