@@ -15,10 +15,10 @@ export default class index extends Component {
     postData = (event) => {
         event.preventDefault();
         event.persist();
-        Axios.post('https://103.135.5.242/backend-app/login.php',{
-            NickName: this.NickName.value,
-            Fullname: this.Fullname.value,
-            Address: this.Address.value
+        Axios.post('https://192.168.5.183/receiveESP/create.php',{
+            nickName: this.nickName.value,
+            fullName: this.fullName.value,
+            address: this.address.value
         })
         .then(function({data}) {
             if(data.success === 1){
@@ -47,17 +47,17 @@ export default class index extends Component {
                         <form onSubmit={this.postData} className="form-add">
                             <h3 className="text-center"><b>Device ID</b></h3>
                             <h4 className="text-center">Scan Device to get the ID</h4>
-                            <input type="text" name="Address" ref={(val) => this.Address = val} className="form-control"></input>
+                            <input type="text" name="address" ref={(val) => this.address = val} className="text-center form-control" style={{width:'220px',marginLeft:'auto',marginRight:'auto'}}></input>
                             <div className="row justify-content-center mt-3 input-add">
                                 <div className="col">
                                     <h3><b>Display Name</b></h3>
                                     <h4>How do you want to be called?</h4>
-                                    <input type="text" name="NickName" ref={(val) => this.NickName = val} className="form-control"></input>
+                                    <input type="text" name="nickName" ref={(val) => this.nickName = val} className="form-control"></input>
                                 </div>
                                 <div className="col">
                                     <h3><b>Full Name</b></h3>
                                     <h4>Visible to other members</h4>
-                                    <input type="text" name="Fullname" ref={(val) => this.Fullname = val} className="form-control"></input>
+                                    <input type="text" name="fullName" ref={(val) => this.fullName = val} className="form-control"></input>
                                 </div>
                             </div>
                             {/* <div className="row">
