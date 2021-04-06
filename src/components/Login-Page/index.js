@@ -12,14 +12,14 @@ export default class index extends Component {
         super();
         this.state = {
             message: '',
-            referrer: 0,
+            referrer: false,
         };
     }
 
     postData = (event) => {
         event.preventDefault();
         event.persist();
-        Axios.post('http://192.168.5.183/receiveESP/create.php', {
+        Axios.post('http://192.168.5.183/receiveESP/login.php', {
             username: this.username.value,
             password: this.password.value,
         })
@@ -27,14 +27,14 @@ export default class index extends Component {
             if(data.success === 1){
                 this.setState({
                     message: data.message,
-                    referrer: 1,
+                    referrer: true,
                 });
                 event.target.reset();
-                swal(this.state.message, {
-                    icon: "success",
-                });
             }
             else {
+                this.setState({
+                    message: data.message,
+                });
                 swal(this.state.message, {
                     icon: "error",
                 });
@@ -48,7 +48,7 @@ export default class index extends Component {
     render() {
         const { referrer } = this.state;
 
-        if (referrer === 1) {
+        if (referrer === true) {
             return (
                 <Redirect to={'/home'} />
             )
