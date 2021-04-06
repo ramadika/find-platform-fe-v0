@@ -11,6 +11,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 
 // Apps
 import BaseLayout from 'components/BaseLayout'
+import Login from 'components/Login-Page'
 import Home from 'components/Home-Page'
 import Reports from 'components/Reports-Page'
 import Dashboard from 'components/Dashboard-Page'
@@ -22,9 +23,10 @@ import Update from 'components/Account-Page/Update-Page'
 ReactDOM.render(
   <Router>
     <Switch>
+      <Route exact path="/" component={Login} />
       <BaseLayout>
         <DataProvider>
-          <Route exact path="/" component={Home} />
+          <Route path="/home" component={Home} />
           <Route path="/reports" component={Reports} />
           <Route path="/dashboard" component={Dashboard} />
           <Route path="/help" component={Help} />

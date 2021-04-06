@@ -1,0 +1,110 @@
+.login {
+  margin-top: 50px;
+  font-family: "Poppins", sans-serif;
+  color: #343a40;
+}
+
+.login .row {
+  width: fit-content;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 1px solid #dcdde1;
+}
+
+.login .row .col {
+  padding: 50px;
+}
+
+.login .row .col-login {
+  background-image: linear-gradient(grey, grey),
+    url(/src/assets/jezael-melgoza-cv3T6MG36DE-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: 220%;
+  background-position: 50% 50%;
+  background-blend-mode: multiply;
+  border-radius: 10px 0px 0px 10px;
+  -moz-border-radius: 10px 0px 0px 10px;
+  -webkit-border-radius: 10px 0px 0px 10px;
+  color: #dcdde1;
+}
+
+.login .row .col-login h3 span {
+  display: block;
+  line-height: 1.75;
+}
+
+.login .row .col img {
+  width: 30px;
+  height: auto;
+  margin-right: 5px;
+}
+
+.login .row .col h6 {
+  font-size: 7pt;
+  color: #00472b;
+  font-style: italic;
+}
+
+.login .row .col h2 {
+  font-size: 14pt;
+}
+
+.login .row .col h4 {
+  font-size: 8pt;
+  color: #dadada;
+}
+
+.login .row .col h5 {
+  margin-bottom: 5px;
+  font-size: 8pt;
+}
+
+.login .form-control {
+  margin-bottom: 15px;
+  padding: 20px 18px;
+  /* width: 100%; */
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 0.5px solid #dcdde1;
+  font-size: 10pt;
+}
+
+::placeholder {
+  color: #dcdde1 !important;
+}
+
+.login .row input[type="submit"] {
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: fit-content;
+  height: fit-content;
+  margin-left: auto;
+  font-weight: bold;
+  font-size: 10pt;
+  color: #343a40;
+  border: 0px solid #dcdde1;
+  background: linear-gradient(#343a40, #1a1f27);
+  color: #dcdde1;
+  border-radius: 10px;
+}
+
+.login .row input:hover[type="submit"]:hover {
+  background-image: linear-gradient(grey, grey),
+    url(/src/assets/jezael-melgoza-cv3T6MG36DE-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: 220%;
+  background-position: 10% 50%;
+  background-blend-mode: multiply;
+  color: #dcdde1;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.login .row a:hover {
+  color: #00472b;
+  text-decoration: none;
+  transition: 0.3s;
+}
