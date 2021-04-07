@@ -23,7 +23,7 @@
   font-family: "Raleway", sans-serif;
   font-style: italic;
   font-weight: 900;
-  margin-right: -5%;
+  /* margin-right: -2%; */
 }
 
 .navbar-dark .navbar-brand span {
@@ -43,7 +43,8 @@
   text-decoration: none;
 }
 
-.navbar-nav a {
+.navbar-nav a,
+.navbar-out {
   color: #ffffff;
   margin-right: 50px;
   font-family: "Raleway", sans-serif;
@@ -51,7 +52,8 @@
   font-weight: 700;
 }
 
-.navbar-nav a:hover {
+.navbar-nav a:hover,
+.navbar-out:hover {
   color: #343a40;
   text-decoration: none;
   transition: 0.3s;
