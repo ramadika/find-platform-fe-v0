@@ -7,7 +7,7 @@ export class DataProvider extends Component {
     state = {
         result: [],
         timestamp: "",
-        url: 'http://192.168.5.183/receiveESP/view.php',
+        url: 'http://103.135.5.242/receiveESP/view.php',
     } 
     
     fetchData = () => {

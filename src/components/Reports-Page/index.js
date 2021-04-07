@@ -18,7 +18,7 @@ export default class index extends Component {
     }
 
     fetchData = () => {
-        fetch('http://192.168.5.183/receiveESP/view.php')
+        fetch('http://103.135.5.242/receiveESP/view.php')
         .then(response => {
             response.json().then(function(data) {
                 if(data.success === 1){
