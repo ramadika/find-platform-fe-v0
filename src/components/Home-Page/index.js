@@ -19,7 +19,8 @@ export default class index extends Component {
         event.preventDefault();
         event.persist();
         Axios.post('http://103.135.5.242/receiveESP/search.php', {
-            User: this.User.value
+            User: this.User.value,
+            Company: this.Company.value,
         })
         .then(function({data}) {
             if(data.success === 1){
@@ -82,6 +83,7 @@ export default class index extends Component {
                     <div className="row d-flex justify-content-center mt-4">
                         <form onSubmit={this.postData}>
                             <div className="form-group row">
+                                <input type="hidden" value={this.context.company} ref={(val) => (this.Company = val)} />
                                 <input type="text" ref={(val) => (this.User = val)} className="col form-control text-center" placeholder="Name" />
                             </div>
                         </form>
