@@ -6,8 +6,10 @@ import { Redirect } from 'react-router-dom'
 // Internals
 import 'components/Login-Page/index.css'
 import img1 from 'assets/Cipta_Things-removebg.png'
+import { DataContext } from 'components/Context'
 
 export default class index extends Component {
+    static contextType = DataContext;
     constructor(){
         super();
         this.state = {
@@ -29,6 +31,7 @@ export default class index extends Component {
                     message: data.message,
                     referrer: true,
                 });
+                this.context.handleAdd(data.company);
                 event.target.reset();
             }
             else {

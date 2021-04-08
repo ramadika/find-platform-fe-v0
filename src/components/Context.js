@@ -7,6 +7,7 @@ export class DataProvider extends Component {
     state = {
         result: [],
         timestamp: "",
+        company: "",
         url: 'http://103.135.5.242/receiveESP/view.php',
     } 
     
@@ -35,10 +36,18 @@ export class DataProvider extends Component {
         setInterval(this.fetchData, 1000)
     }
 
+    handleAdd = (comp) => {
+        this.setState({
+            company: comp,
+        })
+    }
+
     render() {
         const contextValue = {
             result: this.state.result,
             timestamp: this.state.timestamp,
+            company: this.state.company,
+            handleAdd: this.handleAdd,
         }
         return (
             <div>

@@ -22,10 +22,10 @@ import Update from 'components/Account-Page/Update-Page'
 
 ReactDOM.render(
   <Router>
-    <Switch>
-      <Route exact path="/" component={Login} />
-      <BaseLayout>
-        <DataProvider>
+    <DataProvider>
+      <Switch>
+        <Route exact path="/" component={Login} />
+        <BaseLayout>
           <Route path="/home" component={Home} />
           <Route path="/reports" component={Reports} />
           <Route path="/dashboard" component={Dashboard} />
@@ -33,9 +33,9 @@ ReactDOM.render(
           <Route path="/account" component={Account} />
           <Route path="/addAccount" component={Add} />
           <Route path="/updateAccount" component={Update} />
-        </DataProvider>
-      </BaseLayout>
-    </Switch>
+        </BaseLayout>
+      </Switch>
+    </DataProvider>
   </Router>,
   document.getElementById('root')
 );
