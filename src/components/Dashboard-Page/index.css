@@ -36,21 +36,21 @@
 }
 
 .summary .row .b-summary {
-    background-image: linear-gradient(grey, grey),
-      url(/src/assets/adrien-olichon-21cM88URmjo-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-size: 220%;
-    background-position: 50% 40%;
-    background-blend-mode: multiply;
+  background-image: linear-gradient(grey, grey),
+    url(/src/assets/adrien-olichon-21cM88URmjo-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: 220%;
+  background-position: 50% 40%;
+  background-blend-mode: multiply;
 }
 
 .summary .row .c-summary {
-    background-image: linear-gradient(grey, grey),
-      url(/src/assets/alex-kotliarskyi-QBpZGqEMsKg-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-size: 220%;
-    background-position: 50% 45%;
-    background-blend-mode: multiply;
+  background-image: linear-gradient(grey, grey),
+    url(/src/assets/alex-kotliarskyi-QBpZGqEMsKg-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: 220%;
+  background-position: 50% 45%;
+  background-blend-mode: multiply;
 }
 
 .summary .row .col h3 {
@@ -66,4 +66,20 @@
   font-weight: 800;
   font-size: 34pt;
   color: #abe4cd;
+}
+
+@media (min-width: 300px) and (max-width: 568px) {
+  .summary .row .a-summary,
+  .summary .row .b-summary,
+  .summary .row .c-summary {
+    background-size: 250%;
+  }
+
+  .summary .row .col h3 {
+    font-size: 9pt;
+  }
+
+  .summary .row .col h5 {
+    font-size: 24pt;
+  }
 }

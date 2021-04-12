@@ -20,13 +20,17 @@
   background-image: linear-gradient(grey, grey),
     url(/src/assets/jezael-melgoza-cv3T6MG36DE-unsplash.jpg);
   background-repeat: no-repeat;
-  background-size: 220%;
+  background-size: 250%;
   background-position: 50% 50%;
   background-blend-mode: multiply;
   border-radius: 10px 0px 0px 10px;
   -moz-border-radius: 10px 0px 0px 10px;
   -webkit-border-radius: 10px 0px 0px 10px;
   color: #dcdde1;
+}
+
+.login .row .col-login h3 {
+  font-size: 16pt;
 }
 
 .login .row .col-login h3 span {
@@ -107,4 +111,18 @@
   color: #00472b;
   text-decoration: none;
   transition: 0.3s;
+}
+
+@media (min-width: 300px) and (max-width: 568px) {
+  .login .row .col-login {
+    background-size: 220%;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+  }
+
+  .login .row .col-login h3 {
+    margin-top: -10%;
+    font-size: 10pt;
+  }
 }
