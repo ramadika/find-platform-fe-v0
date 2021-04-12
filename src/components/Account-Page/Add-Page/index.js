@@ -71,10 +71,16 @@ export default class index extends Component {
                     address: data.address,
                     referrer: 1
                 });
-                alert(data.message);
+                // alert(data.message);
+                swal(data.message, {
+                    icon: "success",
+                });
             }
             else {
-                alert(data.message);
+                // alert(data.message);
+                swal(data.message, {
+                  icon: "error",
+                });
             }
         }.bind(this)) 
         .catch(function (error) {

@@ -71,7 +71,7 @@
   .update .row .col input[type="text"]{
     width: 150px;
     margin-right: 0px;
-    padding: 0px;
+    font-size: 10pt;
   }
 
   .update .row .delete-update h3{
