@@ -4,8 +4,10 @@ import Axios from 'axios';
 import swal from "sweetalert";
 // Internals
 import 'components/Account-Page/Update-Page/index.css'
+import { DataContext } from 'components/Context'
 
 export default class index extends Component {
+    static contextType = DataContext; 
     constructor(){
         super();
         this.state = {
@@ -68,29 +70,29 @@ export default class index extends Component {
                         <form onSubmit={this.postData}>
                             <h3 className="text-center"><b>Device ID <span style={{color:'red'}}>*</span></b></h3>
                             <h4 className="text-center">Scan Device to get the ID</h4>
-                            <input type="text" name="address" ref={(val) => this.address = val} className="text-center form-control" style={{width:'220px',marginLeft:'auto',marginRight:'auto'}} disabled></input>
+                            <input type="text" name="address" value={this.context.address} ref={(val) => this.address = val} className="text-center form-control" style={{width:'220px',marginLeft:'auto',marginRight:'auto'}} disabled></input>
                             <div className="row justify-content-center mt-3">
                                 <div className="col">
                                     <h3><b>Display Name <span style={{color:'red'}}>*</span></b></h3>
                                     <h4>How do you want to be called?</h4>
-                                    <input type="text" name="nickName" ref={(val) => this.nickName = val} className="form-control" required></input>
+                                    <input type="text" name="nickName" value={this.context.nickname} ref={(val) => this.nickName = val} className="form-control" required></input>
                                 </div>
                                 <div className="col">
                                     <h3><b>Full Name <span style={{color:'red'}}>*</span></b></h3>
                                     <h4>Visible to other members</h4>
-                                    <input type="text" name="fullName" ref={(val) => this.fullName = val} className="form-control" required></input>
+                                    <input type="text" name="fullName" value={this.context.fullname} ref={(val) => this.fullName = val} className="form-control" required></input>
                                 </div>
                             </div>
                             <div className="row justify-content-center mt-3">
                                 <div className="col">
                                     <h3><b>Email</b></h3>
                                     <h4>Receive logging in info</h4>
-                                    <input type="text" name="nickName" ref={(val) => this.nickName = val} className="form-control" required></input>
+                                    <input type="text" name="email" value={this.context.email} ref={(val) => this.email = val} className="form-control"></input>
                                 </div>
                                 <div className="col">
                                     <h3><b>Phone Number <span style={{color:'red'}}>*</span></b></h3>
                                     <h4>For receiving notifications</h4>
-                                    <input type="text" name="fullName" ref={(val) => this.fullName = val} className="form-control" required></input>
+                                    <input type="text" name="phoneNumber" value={this.context.phonenumber} ref={(val) => this.phoneNumber = val} className="form-control" required></input>
                                 </div>
                             </div>
                             <div className="row mt-4 delete-update">

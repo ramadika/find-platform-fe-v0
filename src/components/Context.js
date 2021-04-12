@@ -8,6 +8,11 @@ export class DataProvider extends Component {
         result: [],
         timestamp: "",
         company: "",
+        address: "",
+        nickname: "",
+        fullname: "",
+        email: "",
+        phonenumber: "",
         url: 'http://103.135.5.242/receiveESP/view.php',
     } 
     
@@ -36,9 +41,14 @@ export class DataProvider extends Component {
         setInterval(this.fetchData, 1000)
     }
 
-    handleAdd = (comp) => {
+    handleAdd = (comp, addr, nick, full, emai, phon) => {
         this.setState({
             company: comp,
+            address: addr,
+            nickname: nick,
+            fullname: full,
+            email: emai,
+            phonenumber: phon,
         })
     }
 
@@ -47,6 +57,11 @@ export class DataProvider extends Component {
             result: this.state.result,
             timestamp: this.state.timestamp,
             company: this.state.company,
+            address: this.state.address,
+            nickname: this.state.nickname,
+            fullname: this.state.fullname,
+            email: this.state.email,
+            phonenumber: this.state.phonenumber,
             handleAdd: this.handleAdd,
         }
         return (

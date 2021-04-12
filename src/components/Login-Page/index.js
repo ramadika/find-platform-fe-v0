@@ -31,12 +31,12 @@ export default class index extends Component {
                     message: data.message,
                     referrer: true,
                 });
-                this.context.handleAdd(data.company);
+                this.context.handleAdd(data.company, data.address, data.nickname, data.fullname, data.email, data.phonenumber);
                 event.target.reset();
             }
             else {
                 this.setState({
-                    message: data.message,
+                    message: data.address,
                 });
                 swal(this.state.message, {
                     icon: "error",
