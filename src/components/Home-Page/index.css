@@ -89,5 +89,7 @@
 @media (min-width: 300px) and (max-width: 568px) {
   .home .row input[type="text"] {
     width: 250px;
+    background-size: 250%;
+    background-position: 50% 45%;
   }
 }
