@@ -52,6 +52,7 @@ export default class index extends Component {
                                 <th>Name</th>
                                 <th>Location</th>
                                 <th>Time</th>
+                                <th>Phone Number</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -61,6 +62,7 @@ export default class index extends Component {
                                         <th scope="row">{results.User}</th>
                                         <td>Area - {results.Area}</td>
                                         <td>{results.Time}</td>
+                                        <td><a href="tel:082218358955">555-428-0940</a></td>
                                     </tr>
                                 ))
                             }

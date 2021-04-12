@@ -65,6 +65,7 @@ export default class index extends Component {
                                         <th>RSSI</th>
                                         <th>Area</th>
                                         <th>Time</th>
+                                        <th>Phone Number</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -76,6 +77,7 @@ export default class index extends Component {
                                                 <td>{results.RSSI}</td>
                                                 <td>{results.Area}</td>
                                                 <td>{results.Time}</td>
+                                                <td><a href="tel:082218358955">555-428-0940</a></td>
                                             </tr>
                                         ))
                                     }
