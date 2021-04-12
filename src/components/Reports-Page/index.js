@@ -18,7 +18,7 @@ export default class index extends Component {
     }
 
     fetchData = () => {
-        fetch('http://103.135.5.242/receiveESP/view.php')
+        fetch('http://103.135.5.242/receiveESP/view.php?Company=' + this.context.company)
         .then(response => {
             response.json().then(function(data) {
                 if(data.success === 1){
@@ -57,7 +57,7 @@ export default class index extends Component {
                     <h6>{this.context.timestamp}</h6>
                     <div className="row mt-3 mb-5">
                         <div className="table-responsive">
-                            <table  id="example" className="table table-borderless">
+                            <table id="example" className="table table-borderless">
                                 <thead>
                                     <tr>
                                         <th>Name</th>
