@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/User-Monitoring/static/css/main.adc2a5e3.chunk.css",
+    "main.css": "/User-Monitoring/static/css/main.250e0321.chunk.css",
     "main.js": "/User-Monitoring/static/js/main.3cc55381.chunk.js",
     "main.js.map": "/User-Monitoring/static/js/main.3cc55381.chunk.js.map",
     "runtime-main.js": "/User-Monitoring/static/js/runtime-main.baa3501a.js",
@@ -12,7 +12,7 @@
     "static/js/3.d3bd2dbb.chunk.js.map": "/User-Monitoring/static/js/3.d3bd2dbb.chunk.js.map",
     "index.html": "/User-Monitoring/index.html",
     "static/css/2.639c579c.chunk.css.map": "/User-Monitoring/static/css/2.639c579c.chunk.css.map",
-    "static/css/main.adc2a5e3.chunk.css.map": "/User-Monitoring/static/css/main.adc2a5e3.chunk.css.map",
+    "static/css/main.250e0321.chunk.css.map": "/User-Monitoring/static/css/main.250e0321.chunk.css.map",
     "static/js/2.8517a46b.chunk.js.LICENSE.txt": "/User-Monitoring/static/js/2.8517a46b.chunk.js.LICENSE.txt",
     "static/media/Cipta_Things-removebg.2cb7f7af.png": "/User-Monitoring/static/media/Cipta_Things-removebg.2cb7f7af.png",
     "static/media/index.css": "/User-Monitoring/static/media/jezael-melgoza-xFoij1E4zic-unsplash.758cb9ac.jpg"
@@ -21,7 +21,7 @@
     "static/js/runtime-main.baa3501a.js",
     "static/css/2.639c579c.chunk.css",
     "static/js/2.8517a46b.chunk.js",
-    "static/css/main.adc2a5e3.chunk.css",
+    "static/css/main.250e0321.chunk.css",
     "static/js/main.3cc55381.chunk.js"
   ]
 }
