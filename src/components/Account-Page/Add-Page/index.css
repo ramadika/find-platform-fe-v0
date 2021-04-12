@@ -87,3 +87,33 @@
   text-decoration: none;
   transition: 0.3s;
 }
+
+@media (min-width: 300px) and (max-width: 568px) {
+  .add .row .col{
+    margin-left: 100px;
+    padding: 0px;
+  }
+  
+  .add .row h4 {
+    font-size: 6pt;
+    color: #343a40;
+  }
+
+  .add .row .col input[type="text"]{
+    width: 150px;
+    margin-right: 0px;
+    padding: 0px;
+  }
+
+  .add .row input[type="submit"] {
+    margin-bottom: 45px !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .update .row .delete-update {
+    border: 1px solid #343a40;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}

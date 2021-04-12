@@ -43,6 +43,11 @@
   text-decoration: none;
 }
 
+.navbar-nav{
+  margin-left: auto;
+  margin-right: -1%;
+}
+
 .navbar-nav a,
 .navbar-out {
   color: #ffffff;
@@ -57,4 +62,15 @@
   color: #343a40;
   text-decoration: none;
   transition: 0.3s;
+}
+
+@media (min-width: 300px) and (max-width: 568px) {
+  .navbar-nav {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .navbar-nav a{
+    margin-top: 7px;
+  }
 }
