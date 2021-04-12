@@ -117,3 +117,19 @@
   background-color: #abe4cd;
   color: #ffffff;
 }
+
+@media (min-width: 300px) and (max-width: 568px) {
+  .help .row .col {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .help .row .col h5 {
+    font-size: 8pt;
+  }
+
+  .help .box-help {
+    width: 350px;
+    font-size: 8pt;
+  }
+}

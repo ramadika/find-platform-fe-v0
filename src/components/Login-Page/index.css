@@ -114,6 +114,10 @@
 }
 
 @media (min-width: 300px) and (max-width: 568px) {
+  .login {
+    margin-top: 35px;
+  }
+  
   .login .row .col-login {
     background-size: 220%;
     border-radius: 10px 10px 10px 10px;
@@ -124,5 +128,17 @@
   .login .row .col-login h3 {
     margin-top: -10%;
     font-size: 8pt;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 812px) {
+  .login .row .col-login {
+    background-size: 720%;
+    background-position: 55% 50%;
+  }
+
+  .login .row .col-login h3 {
+    margin-top: -10%;
+    font-size: 11pt;
   }
 }
