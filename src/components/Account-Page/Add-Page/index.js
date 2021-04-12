@@ -26,7 +26,7 @@ export default class index extends Component {
           dangerMode: true,
         }).then((willDelete) => {
             if (willDelete) {
-                Axios.post("http://103.135.5.242/receiveESP/create.php", {
+                Axios.post("https://103.135.5.242/receiveESP/create.php", {
                     nickName: this.nickName.value,
                     fullName: this.fullName.value,
                     address: this.state.address,
@@ -62,7 +62,7 @@ export default class index extends Component {
     getData = (event) => {
         event.preventDefault();
         event.persist();
-        Axios.post("http://103.135.5.242/receiveESP/get.php", {
+        Axios.post("https://103.135.5.242/receiveESP/get.php", {
             counter: 1,
         })
         .then(function({data}) {
