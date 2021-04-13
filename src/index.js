@@ -16,6 +16,7 @@ import Home from 'components/Home-Page'
 import Reports from 'components/Reports-Page'
 import Dashboard from 'components/Dashboard-Page'
 import Help from 'components/Help-Page'
+import GStarted from 'components/Help-Page/GStarted-Page'
 import Account from 'components/Account-Page'
 import Add from 'components/Account-Page/Add-Page'
 import Update from 'components/Account-Page/Update-Page'
@@ -30,6 +31,7 @@ ReactDOM.render(
           <Route path="/reports" component={Reports} />
           <Route path="/dashboard" component={Dashboard} />
           <Route path="/help" component={Help} />
+          <Route path="/gstarted" component={GStarted} />
           <Route path="/account" component={Account} />
           <Route path="/addAccount" component={Add} />
           <Route path="/updateAccount" component={Update} />

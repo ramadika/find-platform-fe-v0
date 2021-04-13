@@ -14,7 +14,7 @@ export default class index extends Component {
                     <h1><BsFillQuestionCircleFill className="mb-2"/> Help Center</h1>
                     <h6>Choose a category to quickly find the help you need</h6>
                     <div className="row mt-5">
-                        <NavLink className="col a-help" to="/">
+                        <NavLink className="col a-help" to="/gstarted">
                             <GiFlyingFlag size={30} className="mb-2"/> 
                             <h5>Getting Started</h5>
                         </NavLink>       
