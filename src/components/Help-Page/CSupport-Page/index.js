@@ -103,7 +103,7 @@ export default class index extends Component {
                                     </div>
                                 </div>
                                 <h3><b>Email Address <span style={{color:'red'}}>*</span></b></h3>
-                                <input type="email" name="email" ref={(val) => this.email = val} className="form-control" required></input>
+                                <input type="email" name="email" ref={(val) => this.email = val} className="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required></input>
                                 <h3><b>Message <span style={{color:'red'}}>*</span></b></h3>
                                 <textarea name="message" ref={(val) => this.message = val} className="form-control" rows="4" cols="50" required></textarea>
                                 <input type="submit" value="Get in touch"  className="form-control my-4"></input>

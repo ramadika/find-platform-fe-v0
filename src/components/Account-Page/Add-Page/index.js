@@ -114,7 +114,7 @@ export default class index extends Component {
                         <div className="col">
                             <h3><b>Email</b></h3>
                             <h4>Receive logging in info</h4>
-                            <input type="text" name="nickName" ref={(val) => this.nickName = val} className="form-control" required></input>
+                            <input type="text" name="nickName" ref={(val) => this.nickName = val} className="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"></input>
                         </div>
                         <div className="col">
                             <h3><b>Phone Number <span style={{color:'red'}}>*</span></b></h3>
