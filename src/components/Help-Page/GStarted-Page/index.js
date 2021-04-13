@@ -30,7 +30,7 @@ export default class index extends Component {
                                 Learn More
                             </Link>
                         </div>
-                        <div className="col mt-2">
+                        <div className="col d-flex justify-content-center mt-2">
                             <img src={img2} alt="img2"></img>
                         </div>
                     </div>

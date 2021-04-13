@@ -37,6 +37,7 @@
   padding-left: 20px;
   padding-right: 20px;
   margin-top: 25px;
+  margin-bottom: 15px;
   width: fit-content;
   font-size: 10pt;
   color: #343a40;
@@ -88,4 +89,20 @@
 .gstarted .learn-gstarted h5 {
   font-size: 8pt;
   line-height: 1.5;
+}
+
+@media (min-width: 300px) and (max-width: 568px) {
+  .gstarted .row .col img {
+    width: 275px;
+    height: auto;
+  }
+
+  .gstarted .border-gstarted {
+    width: 75%;
+  }
+  
+  .gstarted .border-gstarted h2 {
+    color: #f5f6fa;
+    font-size: 10pt;
+  }
 }

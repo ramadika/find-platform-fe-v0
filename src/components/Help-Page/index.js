@@ -18,7 +18,7 @@ export default class index extends Component {
                             <GiFlyingFlag size={30} className="mb-2"/> 
                             <h5>Getting Started</h5>
                         </NavLink>       
-                        <NavLink className="col b-help" to="/">
+                        <NavLink className="col b-help" to="/uguides">
                             <GiOpenBook size={30} className="mb-2"/>
                             <h5>Usage Guides</h5>
                         </NavLink>

@@ -36,11 +36,6 @@ export class DataProvider extends Component {
         });
     }
 
-    componentDidMount(){
-        this.fetchData();
-        setInterval(this.fetchData, 1000)
-    }
-
     handleAdd = (comp, addr, nick, full, emai, phon) => {
         this.setState({
             company: comp,
@@ -50,6 +45,35 @@ export class DataProvider extends Component {
             email: emai,
             phonenumber: phon,
         })
+    }
+
+    componentDidMount(){
+        this.fetchData();
+        setInterval(this.fetchData, 1000)
+
+        const dataComp = localStorage.getItem('Company')
+        const dataAddr = localStorage.getItem('Address')
+        const dataNick = localStorage.getItem('Nickname')
+        const dataFull = localStorage.getItem('Fullname')
+        const dataEmai = localStorage.getItem('Email')
+        const dataPhon = localStorage.getItem('Phonenumber')
+        this.setState({
+            company: dataComp,
+            address: dataAddr,
+            nickname: dataNick,
+            fullname: dataFull,
+            email: dataEmai,
+            phonenumber: dataPhon,
+        })
+    }
+
+    componentDidUpdate(){
+        localStorage.setItem('Company', this.state.company)
+        localStorage.setItem('Address', this.state.address)
+        localStorage.setItem('Nickname', this.state.nickname)
+        localStorage.setItem('Fullname', this.state.fullname)
+        localStorage.setItem('Email', this.state.email)
+        localStorage.setItem('Phonenumber', this.state.phonenumber)
     }
 
     render() {
