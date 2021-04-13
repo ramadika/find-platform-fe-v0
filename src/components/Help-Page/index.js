@@ -22,7 +22,7 @@ export default class index extends Component {
                             <GiOpenBook size={30} className="mb-2"/>
                             <h5>Usage Guides</h5>
                         </NavLink>
-                        <NavLink className="col c-help" to="/">
+                        <NavLink className="col c-help" to="/csupport">
                             <GiFlyingFlag size={30} className="mb-2"/>
                             <h5>Contact Support</h5>
                         </NavLink> 

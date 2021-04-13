@@ -1,0 +1,71 @@
+.csupport {
+  font-family: "Poppins", sans-serif;
+  margin-top: 80px;
+}
+
+.csupport h1 {
+  font-family: "Ubuntu", sans-serif;
+  text-transform: uppercase;
+  color: #343a40;
+  font-size: 26pt;
+}
+
+.csupport h6 {
+  font-size: 7pt;
+  color: #00472b;
+  font-style: italic;
+}
+
+.csupport h6 img {
+  width: 30px;
+  height: auto;
+  margin-right: 5px;
+}
+
+.csupport .row .col h4 {
+  margin-top: 15px;
+  margin-left: 35px;
+  font-size: 10pt;
+  color: #343a40;
+}
+
+.csupport .row .col h4 span {
+  display: block;
+  line-height: 1.75;
+}
+
+.csupport h5 {
+  font-size: 8pt;
+  color: #dcdde1;
+}
+
+.csupport .row h3 {
+  font-size: 10pt;
+  margin-top: 15px;
+  color: #343a40;
+}
+
+.csupport .row input[type="submit"] {
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: fit-content;
+  height: fit-content;
+  margin-right: auto;
+  font-size: 10pt;
+  color: #343a40;
+  border: 1px solid #343a40;
+  border-radius: 10px;
+}
+
+.csupport .row input:hover[type="submit"]:hover {
+  background-image: linear-gradient(grey, grey),
+    url(/src/assets/jezael-melgoza-cv3T6MG36DE-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: 220%;
+  background-position: 10% 50%;
+  background-blend-mode: multiply;
+  color: #dcdde1;
+  text-decoration: none;
+  transition: 0.3s;
+}

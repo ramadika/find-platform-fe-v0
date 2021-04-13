@@ -18,6 +18,7 @@ import Dashboard from 'components/Dashboard-Page'
 import Help from 'components/Help-Page'
 import GStarted from 'components/Help-Page/GStarted-Page'
 import UGuides from 'components/Help-Page/UGuides-Page'
+import CSupport from 'components/Help-Page/CSupport-Page'
 import Account from 'components/Account-Page'
 import Add from 'components/Account-Page/Add-Page'
 import Update from 'components/Account-Page/Update-Page'
@@ -34,6 +35,7 @@ ReactDOM.render(
           <Route path="/help" component={Help} />
           <Route path="/gstarted" component={GStarted} />
           <Route path="/uguides" component={UGuides} />
+          <Route path="/csupport" component={CSupport} />
           <Route path="/account" component={Account} />
           <Route path="/addAccount" component={Add} />
           <Route path="/updateAccount" component={Update} />
