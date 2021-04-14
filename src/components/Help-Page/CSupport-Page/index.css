@@ -1,6 +1,6 @@
 .csupport {
   font-family: "Poppins", sans-serif;
-  margin-top: 80px;
+  margin-top: 60px;
 }
 
 .csupport h1 {
@@ -22,16 +22,42 @@
   margin-right: 5px;
 }
 
-.csupport .row .col h4 {
-  margin-top: 15px;
+.csupport .section1-csupport {
+  background-image: linear-gradient(grey, grey),
+    url(/src/assets/mario-gogh-VBLHICVh-lI-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: 150%;
+  background-position: 50% 50%;
+  background-blend-mode: multiply;
+  color: #dcdde1;
+  margin-right: 25px;
+}
+
+.csupport .section1-csupport h2 {
   margin-left: 35px;
-  font-size: 10pt;
+  font-size: 36pt;
+}
+
+.csupport .section1-csupport h4 {
+  margin-top: 15px;
+  margin-left: 40px;
+  margin-bottom: 25px;
+  font-size: 11pt;
+}
+
+.csupport .section1-csupport h4 span {
+  display: block;
+  line-height: 2;
+}
+
+.csupport .section1-csupport svg {
+  margin-bottom: 25px;
   color: #343a40;
 }
 
-.csupport .row .col h4 span {
-  display: block;
-  line-height: 1.75;
+.csupport .section1-csupport a:hover svg {
+  color: #dcdde1;
+  transition: 0.3s;
 }
 
 .csupport h5 {
@@ -43,6 +69,15 @@
   font-size: 10pt;
   margin-top: 15px;
   color: #343a40;
+}
+
+.csupport .form-control {
+  padding: 20px 18px;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 0.5px solid #dcdde1;
+  font-size: 10pt;
 }
 
 .csupport .row input[type="submit"] {

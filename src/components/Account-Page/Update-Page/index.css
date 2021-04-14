@@ -29,6 +29,15 @@
   color: #343a40;
 }
 
+.update .form-control {
+  padding: 18px 18px;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 0.5px solid #dcdde1;
+  font-size: 10pt;
+}
+
 .update .row input[type="submit"] {
   padding: 10px;
   padding-left: 20px;
