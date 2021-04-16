@@ -17,7 +17,7 @@ export default class index extends Component {
                     <h6 className="text-center"><img src={img1} alt="img"></img><b>Cipta</b>Things.</h6>
                     <h1 className="text-center">Usage Guides</h1>
                     <h5 className="text-center">Welcome! We're here to help you get things rolling.</h5>
-                    <div className="row">
+                    <div className="row mb-5">
                         <div className="col">
                             <div className="row step-uguides step1-guides">
                                 <CgProfile style={{marginTop:'10px', marginRight:'30px'}} size={20}/>

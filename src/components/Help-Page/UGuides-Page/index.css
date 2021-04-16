@@ -84,3 +84,19 @@
 .uguides .step-uguides h3 span {
   display: block;
 }
+
+@media (min-width: 300px) and (max-width: 568px) {
+  .uguides .row {
+    padding: 10px;
+    background-size: 250%;
+  }
+
+  .uguides .step-uguides {
+    width: fit-content;
+  }
+
+  .uguides .step-uguides h3 {
+    margin-top: 10px;
+    font-size: 11pt;
+  }
+}

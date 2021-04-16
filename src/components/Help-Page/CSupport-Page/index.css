@@ -104,3 +104,23 @@
   text-decoration: none;
   transition: 0.3s;
 }
+
+@media (min-width: 300px) and (max-width: 568px) {
+  .csupport .section1-csupport {
+    margin-right: 0px;
+    margin-bottom: 25px;
+  }
+
+  .csupport .section1-csupport h2 {
+    margin-top: 25px;
+    font-size: 28pt;
+  }
+
+  .csupport .section1-csupport h4 {
+    font-size: 8pt;
+  }
+
+  .csupport .row input[type="submit"] {
+    margin-bottom: 50px !important;
+  }
+}
