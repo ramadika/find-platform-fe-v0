@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/User-Monitoring/static/css/main.7489fb70.chunk.css",
-    "main.js": "/User-Monitoring/static/js/main.d4e33ff8.chunk.js",
-    "main.js.map": "/User-Monitoring/static/js/main.d4e33ff8.chunk.js.map",
+    "main.css": "/User-Monitoring/static/css/main.fb480ff5.chunk.css",
+    "main.js": "/User-Monitoring/static/js/main.6eb10faa.chunk.js",
+    "main.js.map": "/User-Monitoring/static/js/main.6eb10faa.chunk.js.map",
     "runtime-main.js": "/User-Monitoring/static/js/runtime-main.e754978f.js",
     "runtime-main.js.map": "/User-Monitoring/static/js/runtime-main.e754978f.js.map",
     "static/css/2.639c579c.chunk.css": "/User-Monitoring/static/css/2.639c579c.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.9492490a.chunk.js.map": "/User-Monitoring/static/js/3.9492490a.chunk.js.map",
     "index.html": "/User-Monitoring/index.html",
     "static/css/2.639c579c.chunk.css.map": "/User-Monitoring/static/css/2.639c579c.chunk.css.map",
-    "static/css/main.7489fb70.chunk.css.map": "/User-Monitoring/static/css/main.7489fb70.chunk.css.map",
+    "static/css/main.fb480ff5.chunk.css.map": "/User-Monitoring/static/css/main.fb480ff5.chunk.css.map",
     "static/js/2.60cb1b56.chunk.js.LICENSE.txt": "/User-Monitoring/static/js/2.60cb1b56.chunk.js.LICENSE.txt",
     "static/media/Cipta_Things-removebg.2cb7f7af.png": "/User-Monitoring/static/media/Cipta_Things-removebg.2cb7f7af.png",
     "static/media/index.css": "/User-Monitoring/static/media/mario-gogh-VBLHICVh-lI-unsplash.54d25b29.jpg",
@@ -25,7 +25,7 @@
     "static/js/runtime-main.e754978f.js",
     "static/css/2.639c579c.chunk.css",
     "static/js/2.60cb1b56.chunk.js",
-    "static/css/main.7489fb70.chunk.css",
-    "static/js/main.d4e33ff8.chunk.js"
+    "static/css/main.fb480ff5.chunk.css",
+    "static/js/main.6eb10faa.chunk.js"
   ]
 }
