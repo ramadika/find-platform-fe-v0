@@ -48,16 +48,16 @@ export default class index extends Component {
     //     });
     // }
 
+    postData = (event) => {
+        this.setState({
+            referrer: true,
+        });
+    }
+
     render() {
         const { referrer } = this.state;
 
-        // if (referrer === true) {
-        //     return (
-        //         <Redirect to={'/home'} />
-        //     )
-        // }
-
-        if (referrer === false) {
+        if (referrer === true) {
             return (
                 <Redirect to={'/home'} />
             )
