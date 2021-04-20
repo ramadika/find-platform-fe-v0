@@ -37,7 +37,7 @@ export default class index extends Component {
     // }
 
     fetchData = () => {
-        fetch('https://103.135.5.242/receiveESP/count.php?Company=1')
+        fetch('http://103.135.5.242/receiveESP/count.php?Company=1')
         .then(response => {
             response.json().then(function(data) {
                 if(data.success === 1){
