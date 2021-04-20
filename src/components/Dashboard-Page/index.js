@@ -15,8 +15,29 @@ export default class index extends Component {
         }
     }
 
+    // fetchData = () => {
+    //     fetch('https://103.135.5.242/receiveESP/count.php?Company=' + this.context.company)
+    //     .then(response => {
+    //         response.json().then(function(data) {
+    //             if(data.success === 1){
+    //                 this.setState({
+    //                     result: data.result,
+    //                     result_area1: data.result_area1,
+    //                     result_area2: data.result_area2,
+    //                 })
+    //             }
+    //             else {
+    //                 console.log(data.message);
+    //             }
+    //         }.bind(this));
+    //     })
+    //     .catch(error => {
+    //         console.log(error);
+    //     });
+    // }
+
     fetchData = () => {
-        fetch('https://103.135.5.242/receiveESP/count.php?Company=' + this.context.company)
+        fetch('https://103.135.5.242/receiveESP/count.php')
         .then(response => {
             response.json().then(function(data) {
                 if(data.success === 1){

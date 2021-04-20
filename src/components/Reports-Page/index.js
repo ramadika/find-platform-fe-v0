@@ -17,8 +17,27 @@ export default class index extends Component {
         }
     }
 
+    // fetchData = () => {
+    //     fetch('https://103.135.5.242/receiveESP/view.php?Company=' + this.context.company)
+    //     .then(response => {
+    //         response.json().then(function(data) {
+    //             if(data.success === 1){
+    //                 this.setState({
+    //                     result: data.result,
+    //                 })
+    //             }
+    //             else {
+    //                 console.log(data.message);
+    //             }
+    //         }.bind(this));
+    //     })
+    //     .catch(error => {
+    //         console.log(error);
+    //     });
+    // }
+
     fetchData = () => {
-        fetch('https://103.135.5.242/receiveESP/view.php?Company=' + this.context.company)
+        fetch('https://103.135.5.242/receiveESP/view.php')
         .then(response => {
             response.json().then(function(data) {
                 if(data.success === 1){

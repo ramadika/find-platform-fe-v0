@@ -85,7 +85,8 @@ export default class index extends Component {
                     <div className="row d-flex justify-content-center mt-4">
                         <form onSubmit={this.postData}>
                             <div className="form-group row">
-                                <input type="hidden" value={this.context.company} ref={(val) => (this.Company = val)} />
+                                {/* <input type="hidden" value={this.context.company} ref={(val) => (this.Company = val)} /> */}
+                                <input type="hidden" value={1} ref={(val) => (this.Company = val)} />
                                 <input type="text" ref={(val) => (this.User = val)} className="col form-control text-center" placeholder="Name" />
                             </div>
                         </form>

@@ -1,7 +1,7 @@
 // Dependencies
 import React, { Component } from 'react'
-import Axios from 'axios';
-import swal from "sweetalert";
+// import Axios from 'axios';
+// import swal from "sweetalert";
 import { Redirect } from 'react-router-dom'
 // Internals
 import 'components/Login-Page/index.css'
@@ -18,40 +18,46 @@ export default class index extends Component {
         };
     }
 
-    postData = (event) => {
-        event.preventDefault();
-        event.persist();
-        Axios.post('https://103.135.5.242/receiveESP/login.php', {
-            username: this.username.value,
-            password: this.password.value,
-        })
-        .then(function({data}) {
-            if(data.success === 1){
-                this.setState({
-                    message: data.message,
-                    referrer: true,
-                });
-                this.context.handleAdd(data.company, data.address, data.nickname, data.fullname, data.email, data.phonenumber);
-                event.target.reset();
-            }
-            else {
-                this.setState({
-                    message: data.address,
-                });
-                swal(this.state.message, {
-                    icon: "error",
-                });
-            }
-        }.bind(this))
-        .catch(function (error) {
-            console.log(error);
-        });
-    }
+    // postData = (event) => {
+    //     event.preventDefault();
+    //     event.persist();
+    //     Axios.post('https://103.135.5.242/receiveESP/login.php', {
+    //         username: this.username.value,
+    //         password: this.password.value,
+    //     })
+    //     .then(function({data}) {
+    //         if(data.success === 1){
+    //             this.setState({
+    //                 message: data.message,
+    //                 referrer: true,
+    //             });
+    //             this.context.handleAdd(data.company, data.address, data.nickname, data.fullname, data.email, data.phonenumber);
+    //             event.target.reset();
+    //         }
+    //         else {
+    //             this.setState({
+    //                 message: data.address,
+    //             });
+    //             swal(this.state.message, {
+    //                 icon: "error",
+    //             });
+    //         }
+    //     }.bind(this))
+    //     .catch(function (error) {
+    //         console.log(error);
+    //     });
+    // }
 
     render() {
         const { referrer } = this.state;
 
-        if (referrer === true) {
+        // if (referrer === true) {
+        //     return (
+        //         <Redirect to={'/home'} />
+        //     )
+        // }
+
+        if (referrer === false) {
             return (
                 <Redirect to={'/home'} />
             )
