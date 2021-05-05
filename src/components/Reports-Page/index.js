@@ -17,27 +17,8 @@ export default class index extends Component {
         }
     }
 
-    // fetchData = () => {
-    //     fetch('https://103.135.5.242/receiveESP/view.php?Company=' + this.context.company)
-    //     .then(response => {
-    //         response.json().then(function(data) {
-    //             if(data.success === 1){
-    //                 this.setState({
-    //                     result: data.result,
-    //                 })
-    //             }
-    //             else {
-    //                 console.log(data.message);
-    //             }
-    //         }.bind(this));
-    //     })
-    //     .catch(error => {
-    //         console.log(error);
-    //     });
-    // }
-
     fetchData = () => {
-        fetch('http://103.135.5.242/receiveESP/view.php?Company=1')
+        fetch('http://103.135.5.242/receiveESP/view.php?Company=' + this.context.company)
         .then(response => {
             response.json().then(function(data) {
                 if(data.success === 1){
@@ -54,6 +35,25 @@ export default class index extends Component {
             console.log(error);
         });
     }
+
+    // fetchData = () => {
+    //     fetch('http://103.135.5.242/receiveESP/view.php?Company=1')
+    //     .then(response => {
+    //         response.json().then(function(data) {
+    //             if(data.success === 1){
+    //                 this.setState({
+    //                     result: data.result,
+    //                 })
+    //             }
+    //             else {
+    //                 console.log(data.message);
+    //             }
+    //         }.bind(this));
+    //     })
+    //     .catch(error => {
+    //         console.log(error);
+    //     });
+    // }
 
     componentDidMount() {
         this.fetchData();

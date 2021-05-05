@@ -18,7 +18,7 @@ export default class index extends Component {
     postData = (event) => {
         event.preventDefault();
         event.persist();
-        Axios.post('https://103.135.5.242/receiveESP/search.php', {
+        Axios.post('http://103.135.5.242/receiveESP/search.php', {
             User: this.User.value,
             Company: this.Company.value,
         })
@@ -77,16 +77,23 @@ export default class index extends Component {
             );
         }
 
+        const access = this.context.result.filter(a => a.User === this.context.nickname);
+
         return (
             <div className="home">
                 <div className="container text-center">
+                    {
+                        access.map(accessed => (
+                            <h2 key={accessed.id}>{accessed.User} at Area - {accessed.Area}</h2>
+                        ))
+                    }
                     <h1>People Location</h1>
                     <h6>{this.context.timestamp}</h6>
                     <div className="row d-flex justify-content-center mt-4">
                         <form onSubmit={this.postData}>
                             <div className="form-group row">
-                                {/* <input type="hidden" value={this.context.company} ref={(val) => (this.Company = val)} /> */}
-                                <input type="hidden" value={1} ref={(val) => (this.Company = val)} />
+                                <input type="hidden" value={this.context.company} ref={(val) => (this.Company = val)} />
+                                {/* <input type="hidden" value={1} ref={(val) => (this.Company = val)} /> */}
                                 <input type="text" ref={(val) => (this.User = val)} className="col form-control text-center" placeholder="Name" />
                             </div>
                         </form>
