@@ -1,5 +1,6 @@
 // Dependencies
 import React, { Component } from 'react'
+import { IoMdDownload } from 'react-icons/io'
 // Internals
 import 'components/Dashboard-Page/index.css'
 import { DataContext } from 'components/Context'
@@ -83,6 +84,27 @@ export default class index extends Component {
                             <h3>Area - 2</h3>
                             <h5>{result_area2}</h5>
                         </div>
+                    </div>
+                    <h2><span><b>Data</b></span> Summary</h2>
+                    <h6>Choose the data summary that you want to know</h6>
+                    <hr />
+                    <div className="row mb-5">
+                        <a href="tel:082218358955" className="d-flex bd-highlight box-summary">
+                            <div className="p-2 w-100 bd-highlight">Tracking Data - {this.context.nickname}</div>
+                            <div className="p-2 flex-shrink-1 bd-highlight icon"><IoMdDownload /></div>
+                        </a>
+                        <a href="tel:082218358955" className="d-flex bd-highlight box-summary">
+                            <div className="p-2 w-100 bd-highlight">Tracking Data - Area 1</div>
+                            <div className="p-2 flex-shrink-1 bd-highlight icon"><IoMdDownload /></div>
+                        </a>
+                        <a href="tel:082218358955" className="d-flex bd-highlight box-summary">
+                            <div className="p-2 w-100 bd-highlight">Tracking Data - Area 2</div>
+                            <div className="p-2 flex-shrink-1 bd-highlight icon"><IoMdDownload /></div>
+                        </a>
+                        <a href="tel:082218358955" className="d-flex bd-highlight box-summary">
+                            <div className="p-2 w-100 bd-highlight">Tracking Data - Area 3</div>
+                            <div className="p-2 flex-shrink-1 bd-highlight icon"><IoMdDownload /></div>
+                        </a>
                     </div>
                 </div>
             </div>
