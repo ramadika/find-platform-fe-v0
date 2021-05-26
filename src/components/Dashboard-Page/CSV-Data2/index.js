@@ -2,7 +2,7 @@
 import React, { Component } from 'react'
 import { CSVLink } from "react-csv";
 // Internals
-import 'components/Dashboard-Page/CSV-Data/index.css'
+import 'components/Dashboard-Page/CSV-Data2/index.css'
 
 const headers = [
     { label: "Address", key: "Address" },
@@ -21,20 +21,20 @@ export default class index extends Component {
       this.csvLinkEl = React.createRef();
     }
   
-    getUserList = () => {
-      return fetch('http://103.135.5.242/receiveESP/get_csv1.php')
+    getArea1List = () => {
+      return fetch('http://192.168.43.36/receiveESP/get_csv2.php')
         .then(res => res.json());
     }
   
     downloadReport = async () => {
-      const data = await this.getUserList();
-      this.setState({ data: data }, () => {
-        setTimeout(() => {
-          this.csvLinkEl.current.link.click();
+        const data = await this.getArea1List();
+        this.setState({ data: data }, () => {
+          setTimeout(() => {
+            this.csvLinkEl.current.link.click();
+          });
         });
-      });
-    }
-  
+      }
+
     render() {
         const { data } = this.state;
         const { title } = this.props;

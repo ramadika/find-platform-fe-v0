@@ -3,7 +3,9 @@ import React, { Component } from 'react'
 // import { IoMdDownload } from 'react-icons/io'
 // Internals
 import 'components/Dashboard-Page/index.css'
-import DataCSV from 'components/Dashboard-Page/CSV-Data'
+import DataCSV from 'components/Dashboard-Page/CSV-Data1'
+import DataCSV2 from 'components/Dashboard-Page/CSV-Data2'
+import DataCSV3 from 'components/Dashboard-Page/CSV-Data3'
 import { DataContext } from 'components/Context'
 
 export default class index extends Component {
@@ -91,8 +93,8 @@ export default class index extends Component {
                     <hr />
                     <div className="row mb-5">
                         <DataCSV title={this.context.nickname}/>
-                        <DataCSV title="Area 1"/>
-                        <DataCSV title="Area 2"/>
+                        <DataCSV2 title="Area 1"/>
+                        <DataCSV3 title="Area 2"/>
                         {/* <a href="tel:082218358955" className="d-flex bd-highlight box-summary">
                             <div className="p-2 w-100 bd-highlight">Tracking Data - {this.context.nickname}</div>
                             <div className="p-2 flex-shrink-1 bd-highlight icon"><IoMdDownload /></div>
