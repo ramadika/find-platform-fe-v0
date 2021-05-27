@@ -92,7 +92,7 @@ export default class index extends Component {
                     <h6>Choose the data summary that you want to know</h6>
                     <hr />
                     <div className="row mb-5">
-                        <DataCSV title={this.context.nickname}/>
+                        <DataCSV title={this.context.nickname} address={this.context.address}/>
                         <DataCSV2 title="Area 1"/>
                         <DataCSV3 title="Area 2"/>
                         {/* <a href="tel:082218358955" className="d-flex bd-highlight box-summary">

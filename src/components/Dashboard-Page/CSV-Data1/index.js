@@ -7,11 +7,10 @@ import { CSVLink } from "react-csv";
 import 'components/Dashboard-Page/CSV-Data1/index.css'
 
 const headers = [
-    { label: "Address", key: "Address" },
-    { label: "User", key: "User" },
+    { label: "MAC-Address", key: "MAC_Address" },
+    { label: "Name", key: "Fullname" },
     { label: "Area", key: "Area" },
-    { label: "Time", key: "Time" },
-    { label: "Company", key: "Company" }
+    { label: "Time", key: "Time" }
 ];
 
 export default class index extends Component {
@@ -30,7 +29,7 @@ export default class index extends Component {
     // }
   
     getUserList = () => {
-      return fetch('http://192.168.43.36/receiveESP/get_csv1.php?User=' + this.props.title)
+      return fetch('http://192.168.43.36/receiveESP/get_csv1.php?Address=' + this.props.address)
         .then(res => res.json());
       // Axios.post('http://192.168.43.36/receiveESP/get_csv1.php', {
       //   user: this.props.title,

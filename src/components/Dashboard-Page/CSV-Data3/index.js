@@ -5,11 +5,10 @@ import { CSVLink } from "react-csv";
 import 'components/Dashboard-Page/CSV-Data3/index.css'
 
 const headers = [
-    { label: "Address", key: "Address" },
-    { label: "User", key: "User" },
+    { label: "MAC-Address", key: "MAC_Address" },
+    { label: "Name", key: "Fullname" },
     { label: "Area", key: "Area" },
-    { label: "Time", key: "Time" },
-    { label: "Company", key: "Company" }
+    { label: "Time", key: "Time" }
 ];
 
 export default class index extends Component {
