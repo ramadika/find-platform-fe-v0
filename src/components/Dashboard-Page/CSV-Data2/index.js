@@ -21,7 +21,7 @@ export default class index extends Component {
     }
   
     getArea1List = () => {
-      return fetch('http://192.168.43.36/receiveESP/get_csv2.php')
+      return fetch('http://103.135.5.242/receiveESP/get_csv2.php')
         .then(res => res.json());
     }
   
