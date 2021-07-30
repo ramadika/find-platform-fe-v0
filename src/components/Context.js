@@ -13,7 +13,8 @@ export class DataProvider extends Component {
         fullname: "",
         email: "",
         phonenumber: "",
-        url: 'http://103.135.5.242/receiveESP/all.php',
+        // url: 'http://103.135.5.242/receiveESP/all.php',
+        url: 'http://192.168.2.8:8080/User-Server/all.php',
     } 
     
     fetchData = () => {

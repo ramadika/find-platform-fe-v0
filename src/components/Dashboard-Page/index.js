@@ -19,8 +19,10 @@ export default class index extends Component {
         }
     }
 
+    // http://103.135.5.242/receiveESP/count.php?Company=' + this.context.company
+
     fetchData = () => {
-        fetch('http://103.135.5.242/receiveESP/count.php?Company=' + this.context.company)
+        fetch('http://192.168.2.8:8080/User-Server/count.php?Company=' + this.context.company)
         .then(response => {
             response.json().then(function(data) {
                 if(data.success === 1){
@@ -93,8 +95,8 @@ export default class index extends Component {
                     <hr />
                     <div className="row mb-5">
                         <DataCSV title={this.context.nickname} address={this.context.address}/>
-                        <DataCSV2 title="Area 1"/>
-                        <DataCSV3 title="Area 2"/>
+                        <DataCSV2 title="Area 1" company={this.context.company}/>
+                        <DataCSV3 title="Area 2" company={this.context.company}/>
                         {/* <a href="tel:082218358955" className="d-flex bd-highlight box-summary">
                             <div className="p-2 w-100 bd-highlight">Tracking Data - {this.context.nickname}</div>
                             <div className="p-2 flex-shrink-1 bd-highlight icon"><IoMdDownload /></div>

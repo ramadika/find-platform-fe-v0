@@ -15,6 +15,8 @@ export default class index extends Component {
         };
     }
 
+    // https://103.135.5.242/receiveESP/create.php
+
     postData = (event) => {
         event.preventDefault();
         event.persist();
@@ -26,7 +28,7 @@ export default class index extends Component {
           dangerMode: true,
         }).then((willDelete) => {
             if (willDelete) {
-                Axios.post("https://103.135.5.242/receiveESP/create.php", {
+                Axios.post("http://192.168.2.8:8080/User-Server/create.php", {
                     nickName: this.nickName.value,
                     fullName: this.fullName.value,
                     address: this.state.address,
@@ -59,10 +61,12 @@ export default class index extends Component {
         });
     }
 
+    // https://103.135.5.242/receiveESP/get.php
+
     getData = (event) => {
         event.preventDefault();
         event.persist();
-        Axios.post("https://103.135.5.242/receiveESP/get.php", {
+        Axios.post("http://192.168.2.8:8080/User-Server/get.php", {
             counter: 1,
         })
         .then(function({data}) {

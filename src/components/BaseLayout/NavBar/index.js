@@ -15,8 +15,8 @@ export default function index() {
                     <Nav>
                         <NavLink to="/dashboard">Dashboard</NavLink>
                         <NavLink to="/reports">Reports</NavLink>
-                        <NavLink to="/help">Help</NavLink>
-                        <NavLink to="/account">Account</NavLink>
+                        {/* <NavLink to="/help">Help</NavLink>
+                        <NavLink to="/account">Account</NavLink> */}
                     </Nav>
                     <NavLink className="ml-auto navbar-out" to="/">Sign out</NavLink>
                 </Navbar.Collapse>
