@@ -31,7 +31,7 @@ export default class index extends Component {
     // http://103.135.5.242/receiveESP/get_csv1.php?Address=' + this.props.address
   
     getUserList = () => {
-      return fetch('http://192.168.2.8:8080/User-Server/get_csv1.php?Address=' + this.props.address)
+      return fetch('http://localhost:8080/User-Server/get_csv1.php?Address=' + this.props.address)
         .then(res => res.json());
       // Axios.post('http://192.168.43.36/receiveESP/get_csv1.php', {
       //   user: this.props.title,

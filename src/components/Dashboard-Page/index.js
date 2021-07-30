@@ -22,7 +22,7 @@ export default class index extends Component {
     // http://103.135.5.242/receiveESP/count.php?Company=' + this.context.company
 
     fetchData = () => {
-        fetch('http://192.168.2.8:8080/User-Server/count.php?Company=' + this.context.company)
+        fetch('http://localhost:8080/User-Server/count.php?Company=' + this.context.company)
         .then(response => {
             response.json().then(function(data) {
                 if(data.success === 1){

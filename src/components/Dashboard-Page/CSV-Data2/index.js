@@ -23,7 +23,7 @@ export default class index extends Component {
     // http://103.135.5.242/receiveESP/get_csv2.php
   
     getArea1List = () => {
-      return fetch('http://192.168.2.8:8080/User-Server/get_csv2.php?Company=' + this.props.company)
+      return fetch('http://localhost:8080/User-Server/get_csv2.php?Company=' + this.props.company)
         .then(res => res.json());
     }
   

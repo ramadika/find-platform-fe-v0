@@ -30,7 +30,7 @@ export default class index extends Component {
           dangerMode: true,
         }).then((willDelete) => {
             if (willDelete) {
-                Axios.post("http://192.168.2.8:8080/User-Server/create.php", {
+                Axios.post("http://localhost:8080/User-Server/create.php", {
                     firstName: this.firstName.value,
                     lastName: this.lastName.value,
                     email: this.email.value,
